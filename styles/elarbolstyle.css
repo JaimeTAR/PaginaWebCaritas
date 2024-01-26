@@ -1,0 +1,116 @@
+@import url(style.css);
+
+.elarbol__title,
+.elarbol__preguntas__title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.elarbol__title > img,
+.elarbol__preguntas__title > img {
+  width: 300px;
+}
+
+.elarbol__video {
+  display: grid;
+  place-items: center;
+  width: min(75%, 900px);
+  padding-bottom: 2rem;
+}
+
+.elarbol__video > * {
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+}
+
+.elarbol__video--player {
+  aspect-ratio: 125 / 75;
+  width: 94%;
+}
+
+.elarbol--second {
+  margin-bottom: 2.5rem;
+}
+
+.elarbol__preguntas {
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+  display: grid;
+  text-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: column;
+  align-items: center;
+  place-items: center;
+}
+
+.elarbol__preguntas > p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 105px;
+  width: 95%;
+  min-height: 100px;
+  margin-bottom: 1rem;
+}
+
+.elarbol__preguntas > p::before {
+  position: absolute;
+  content: "";
+  width: 85px;
+  aspect-ratio: 1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.uno::before {
+  background-image: url(../images/uno.png);
+}
+
+.dos::before {
+  background-image: url(../images/dos.png);
+}
+
+.tres::before {
+  background-image: url(../images/tres.png);
+}
+
+.cuatro::before {
+  background-image: url(../images/cuatro.png);
+}
+
+.cinco::before {
+  background-image: url(../images/cinco.png);
+}
+.seis::before {
+  background-image: url(../images/seis.png);
+}
+
+.siete::before {
+  background-image: url(../images/siete.png);
+}
+
+.ocho::before {
+  background-image: url(../images/ocho.png);
+}
+
+@media (max-width: 900px) {
+  .elarbol__video {
+    width: 100%;
+  }
+
+  .elarbol__preguntas {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .elarbol__preguntas > p {
+    width: 80%;
+    margin-bottom: 0.5rem;
+  }
+}

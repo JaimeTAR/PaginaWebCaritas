@@ -1,0 +1,242 @@
+@import url(style.css);
+
+.highlighted {
+  color: #54291e;
+}
+
+.reyoreina--first {
+  background-image: url(../images/reyoreinabg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-bottom: 4rem;
+}
+
+.start {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.start > img,
+.valordonestitle > img {
+  width: 300px;
+}
+
+.instrucciones {
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.paso {
+  position: relative;
+  padding-left: 100px;
+  padding-block: 10px;
+  min-height: 80px;
+}
+
+.instrucciones__number {
+  display: none;
+}
+
+.paso::before {
+  content: "";
+  position: absolute;
+  width: 85px;
+  background-size: cover;
+  height: 85px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.paso:nth-of-type(1)::before {
+  background-image: url(../images/uno.png);
+}
+.paso:nth-of-type(2)::before {
+  background-image: url(../images/dos.png);
+  top: 25%;
+}
+
+.paso:nth-of-type(4)::before {
+  background-image: url(../images/tres.png);
+}
+
+.crown {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  float: right;
+  min-width: 300px;
+  max-width: 50%;
+  height: 100%;
+  z-index: 5;
+}
+
+.crown > img {
+  width: 85%;
+  animation: 5s ease-in-out running infinite crownfloat;
+}
+
+.reyoreina--second {
+  background-image: url(../images/valordonesbg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  margin-bottom: 3%;
+}
+
+.valordonestitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.valordones--container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.valordones {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-block: 4rem;
+}
+
+.sideimg {
+  width: 22%;
+  background-size: contain;
+  scale: 1.3;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.valordones__list {
+  width: 56%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  z-index: 3;
+}
+
+.valordones__list > img {
+  margin-bottom: 2%;
+  width: 28%;
+}
+
+.valordones__list > img:last-child {
+  margin: 0 auto;
+}
+
+.sideimg--queen {
+  background-image: url(../images/reina.svg);
+}
+
+.sideimg--king {
+  background-image: url(../images/rey.svg);
+}
+
+@keyframes crownfloat {
+  from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 900px) {
+  .reyoreina--first {
+    padding-bottom: 0;
+  }
+
+  .crown {
+    float: right;
+    min-height: 300px;
+    min-width: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .paso {
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    min-height: 0;
+    text-align: center;
+  }
+
+  .paso::before,
+  .paso:nth-of-type(2)::before {
+    background-size: cover;
+    inset: 0;
+    bottom: 0;
+    left: 50%;
+    transform: none;
+    transform: translateX(-50%);
+  }
+
+  .paso:nth-of-type(1)::before {
+    transform: none;
+    inset: 0;
+    top: 20%;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+
+  .paso:nth-of-type(1) {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .paso:nth-of-type(3) {
+    padding-top: 0px;
+  }
+
+  .valordones {
+    padding: 0;
+    padding-block: 2%;
+  }
+
+  .valordones__list > img {
+    margin-bottom: 3%;
+    width: 40%;
+  }
+
+  .valordones__list {
+    justify-content: center;
+    gap: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .valordones {
+    padding: 0;
+    padding-block: 2%;
+  }
+
+  .valordones__list > img {
+    margin-bottom: 3%;
+    width: 80%;
+  }
+
+  .valordones__list {
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .valordonestitle > img {
+    width: 225px;
+  }
+}
