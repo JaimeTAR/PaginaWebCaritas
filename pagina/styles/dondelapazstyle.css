@@ -1,0 +1,206 @@
+@import url(style.css);
+
+body {
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+main {
+  background-image: url(../images/dondelapazbg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.highlighted {
+  color: #54291e;
+}
+
+.lapaz__first {
+  min-height: 380px;
+}
+
+.lapaz__title,
+.lapaz__ejemplo__title {
+  padding-block: 1rem;
+  text-align: center;
+}
+
+.lapaz__title > img {
+  width: 300px;
+}
+
+.lapaz__info > p {
+  text-align: justify;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.lapaz__info > img {
+  padding-left: 2rem;
+  width: 280px;
+  float: right;
+}
+
+.lapaz__ejemplo__title > img {
+  width: 200px;
+}
+
+.lapaz__ejemplo__info {
+  position: relative;
+  text-align: justify;
+
+  transform: translateY(-50px);
+}
+
+.lapaz__ejemplo__info--first {
+  max-width: 90%;
+}
+
+.violonchelo {
+  width: 220px;
+  aspect-ratio: 463/792;
+  float: left;
+  shape-outside: polygon(0px 0px, 69.5% 0px, 69.5% 60%, 92.5% 60%, 91.5% 90%, 0px 90%);
+
+  transform: translateX(-30px);
+}
+
+.handgift {
+  width: 140px;
+  aspect-ratio: 100/131;
+  float: right;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  margin-left: 30px;
+}
+
+.lapaz__third {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.lapaz__third::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background-color: #d35b02;
+}
+
+.diosespaz__title {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.diosespaz__title > img {
+  width: 300px;
+}
+
+.diosespaz__text {
+  text-align: justify;
+}
+
+.diosespaz__valores {
+  padding-top: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.diosespaz__valores > div {
+  width: 30%;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  place-items: center;
+}
+
+.ayudarnos--title,
+.impulsarnos--title,
+.transformarnos--title {
+  width: 80%;
+}
+
+.ayudarnos--icon {
+  width: 80%;
+  margin-top: 5%;
+  aspect-ratio: 345/235;
+}
+
+.impulsarnos--icon {
+  margin-top: 5%;
+  width: 80%;
+  aspect-ratio: 345/268;
+}
+
+.transformarnos--icon {
+  margin-top: 10%;
+  width: 70%;
+  aspect-ratio: 345/324;
+}
+
+@media (max-width: 900px) {
+  .lapaz__info > img {
+    padding: 0;
+    width: 280px;
+    float: none;
+  }
+
+  .lapaz__info {
+    text-align: center;
+  }
+
+  .violonchelo {
+    width: 150px;
+    shape-outside: polygon(0px 0px, 69.5% 0px, 69.5% 60%, 92.5% 60%, 91.5% 95%, 0px 99%);
+  }
+
+  .handgift {
+    width: 100px;
+    transform: translateY(-15px);
+    shape-outside: polygon(0 0, 100% 0, 100% 91%, 0 91%);
+  }
+
+  .lapaz__ejemplo__info--first {
+    max-width: 98%;
+  }
+
+  .diosespaz__valores {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .diosespaz__valores > div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .lapaz__info > img {
+    width: 200px;
+  }
+
+  .lapaz__ejemplo__info {
+    text-align: center;
+  }
+
+  .lapaz__ejemplo__info--first,
+  .lapaz__ejemplo__info--second {
+    text-align: justify;
+  }
+
+  .violonchelo {
+    float: none;
+    transform: translateY(40px);
+  }
+  .handgift {
+    width: 140px;
+    float: none;
+    transform: none;
+  }
+  .diosespaz__valores > div {
+    width: 100%;
+  }
+}
