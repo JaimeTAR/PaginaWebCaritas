@@ -198,10 +198,11 @@ p {
   margin-top: 10px;
   overflow: hidden;
   border-radius: 0 0 10px 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .dropdown__item {
+  
   padding-block: 5px;
   padding-inline: 5px;
 }
