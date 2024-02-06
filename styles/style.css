@@ -517,6 +517,7 @@ p {
   .header--grid {
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
   }
 
   .logo {
@@ -551,7 +552,6 @@ p {
     padding-block: 15px;
   }
 
-  .navbar
 
   .navbar__item:hover {
     outline: none;
