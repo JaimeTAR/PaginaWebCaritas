@@ -61,7 +61,7 @@ img {
 header {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1rem;
   height: fit-content;
   padding-top: 35px;
   gap: 5%;
@@ -139,7 +139,6 @@ p {
   width: 100%;
   grid-column: 3;
   position: relative;
-  overflow: hidden;
 }
 
 .navbar__list {
@@ -160,32 +159,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   z-index: 2;
-}
-
-.navbar__dropdown {
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: absolute;
-  max-height: 0px;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  padding-inline: 0;
-  right: min(2%, 20px);
-  top: calc(100% + 0.6rem);
-  width: 400px;
-  list-style: none;
-  text-align: center;
-  border-radius: 0 0 30px 30px;
-  background-color: var(--navbar-bg-color);
-  z-index: 2;
-  transition: max-height ease-out 0.3s;
-  z-index: 100;
-}
-
-.navbar__dropdown > li {
-  padding-block: 0.5rem;
 }
 
 .navbar__item {
@@ -215,17 +188,32 @@ p {
   z-index: 1;
 }
 
-.dropdown__item {
-  position: relative;
-  border-radius: 1rem;
-  outline: solid 0.135rem transparent;
-  outline-offset: 0rem;
-  transition: all 0.5s ease;
+.dropdown__menu {
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 2;
+  position: absolute;
+  background-color: var(--navbar-bg-color);
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+  transition: all 0.5s ease-in-out;
 }
 
-.dropdown__item:hover {
-  outline: #d35b02 solid 0.135rem;
-  outline-offset: -0.4rem;
+.dropdown__item {
+  padding-block: 5px;
+  padding-inline: 5px;
+}
+
+.dropdown__item > a {
+  text-decoration: none;
+  color: #d35b02;
+}
+
+.selected--dropdown {
+  background-color: var(--navbar-separator-color);
+  border-radius: 100px;
 }
 
 .separator {
@@ -237,8 +225,7 @@ p {
 }
 
 .separator--dropdown {
-  right: 0;
-  left: 0;
+  background-color: var(--navbar-separator-color);
   width: 100%;
   height: 3px;
   margin: 0;

@@ -1,23 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.querySelector(".navbar");
+  const dropdown__toggle1 = document.querySelector(".dropdown__toggle1");
+  const dropdown__toggle2 = document.querySelector(".dropdown__toggle2");
+  const dropdown__menu1 = document.querySelector(".dropdown__menu--1");
+  const dropdown__menu2 = document.querySelector(".dropdown__menu--2");
 
-  const navbarDropdown = document.querySelector(".navbar__dropdown");
-
-  const dropdownToggle = document.getElementById("dropdown__toggle");
-
-  dropdownToggle.addEventListener("click", function () {
-    if (navbarDropdown.style.maxHeight === "0px") {
-      navbarDropdown.style.maxHeight = "1000%";
-      navbar.style.overflow = "visible";
+  dropdown__toggle1.addEventListener("click", function () {
+    if (dropdown__menu1.style.maxHeight === "0px") {
+      dropdown__menu1.style.maxHeight = "150px";
     } else {
-      navbarDropdown.style.maxHeight = "0px";
-      navbar.style.overflow = "hidden";
+      dropdown__menu1.style.maxHeight = "0px";
+    }
+    if (dropdown__menu2.style.maxHeight === "150px") {
+      dropdown__menu2.style.maxHeight = "0px";
     }
   });
 
-  navbar.addEventListener("mouseleave", function () {
-    navbarDropdown.style.maxHeight = "0px";
-    navbar.style.overflow = "hidden";
+  dropdown__toggle2.addEventListener("click", function () {
+    if (dropdown__menu2.style.maxHeight === "0px") {
+      dropdown__menu2.style.maxHeight = "150px";
+    } else {
+      dropdown__menu2.style.maxHeight = "0px";
+    }
+    if (dropdown__menu1.style.maxHeight === "150px") {
+      dropdown__menu1.style.maxHeight = "0px";
+    }
   });
 
   const hamburger = document.querySelector(".hamburger");
