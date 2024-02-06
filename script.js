@@ -6,33 +6,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dropdown__toggle1.addEventListener("click", function () {
     if (dropdown__menu1.style.maxHeight === "0px") {
-      dropdown__menu1.style.maxHeight = "150px";
+      dropdown__menu1.style.maxHeight = "400px";
     } else {
       dropdown__menu1.style.maxHeight = "0px";
     }
-    if (dropdown__menu2.style.maxHeight === "150px") {
+    if (dropdown__menu2.style.maxHeight === "400px") {
       dropdown__menu2.style.maxHeight = "0px";
     }
   });
 
   dropdown__toggle2.addEventListener("click", function () {
     if (dropdown__menu2.style.maxHeight === "0px") {
-      dropdown__menu2.style.maxHeight = "150px";
+      dropdown__menu2.style.maxHeight = "400px";
     } else {
       dropdown__menu2.style.maxHeight = "0px";
     }
-    if (dropdown__menu1.style.maxHeight === "150px") {
+    if (dropdown__menu1.style.maxHeight === "400px") {
       dropdown__menu1.style.maxHeight = "0px";
     }
   });
 
   const hamburger = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".navbar");
 
   hamburger.addEventListener("click", function () {
-    if (navbar.style.maxHeight === "1000%") {
+    if (navbar.style.maxHeight === "1000px") {
       navbar.style.maxHeight = "0px";
     } else {
-      navbar.style.maxHeight = "1000%";
+      navbar.style.maxHeight = "1000px";
     }
   });
 

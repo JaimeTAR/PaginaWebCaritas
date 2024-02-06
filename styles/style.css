@@ -512,7 +512,6 @@ p {
     position: relative;
     background-color: var(--navbar-bg-color-mobile);
     padding: 0;
-    margin-bottom: 20px;
   }
 
   .header--grid {
@@ -531,25 +530,28 @@ p {
     display: flex;
     top: 100%;
     z-index: 2;
+    height: fit-content;
     max-height: 0px;
     overflow: hidden;
     background-color: var(--navbar-bg-color-mobile);
     width: 100%;
     flex-direction: column;
     align-items: center;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
   }
 
   .navbar__list {
     width: 100%;
     display: block;
     padding: 0;
-    border-radius: 0px;
+  
   }
 
-  .navbar__item {
+  .navbar__item, .dropdown__item {
     padding-block: 15px;
   }
+
+  .navbar
 
   .navbar__item:hover {
     outline: none;
@@ -564,10 +566,10 @@ p {
   }
 
   .hamburger {
+    background-color: transparent;
     margin: 15px;
     height: 70px;
     width: 70px;
-    background-color: transparent;
     border: none;
     display: flex;
     flex-direction: column;
@@ -583,27 +585,36 @@ p {
     background-color: var(--navbar-mobile-menu-icon);
   }
 
-  .separator {
+  .separator--dropdown, .separator  {
     display: none;
   }
 
-  .navbar__dropdown {
-    position: absolute;
-    inset: 0;
-    top: 100%;
+ 
+
+  .dropdown__menu{
     margin: 0;
-    padding: 0;
-    width: 100%;
-    height: fit-content;
+    margin-top: 10px;
     border-radius: 0;
-    background-color: var(--navbar-bg-color-dropdown);
-    z-index: 2;
+    position: relative;
+    transition: max-height .5s ease-in;
   }
 
-  .navbar__dropdown > .dropdown__item > a {
-    color: var(--navbar-bg-color-mobile);
+  .dropdown__item{
+    background-color: var(--navbar-bg-color-dropdown); 
   }
 
+  .dropdown__item > a{
+    color: var(--navbar-bg-color);
+  }
+
+  .selected--dropdown {
+    border-radius: 0;
+    background-color: rgb(255, 183, 101);
+  }
+
+  .selected--dropdown > a{
+    color: var(--navbar-bg-color-dropdown);
+  }
   /* Fin de la navbar */
 
   .hero {
@@ -667,8 +678,3 @@ p {
   }
 }
 
-@media (min-width: 1326px) {
-  .navbar__dropdown {
-    top: calc(100% + 0.95rem);
-  }
-}
