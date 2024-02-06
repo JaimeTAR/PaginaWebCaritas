@@ -123,22 +123,27 @@ main {
   width: 80%;
 }
 
+
+
 .ayudarnos--icon {
   width: 80%;
   margin-top: 5%;
   aspect-ratio: 345/235;
+  animation: 5s ease-in-out running infinite hoveringFirst;
 }
 
 .impulsarnos--icon {
   margin-top: 5%;
   width: 80%;
   aspect-ratio: 345/268;
+  animation: 5s ease-in-out running infinite hoveringSecond;
 }
 
 .transformarnos--icon {
   margin-top: 10%;
   width: 70%;
   aspect-ratio: 345/324;
+  animation: 5s ease-in-out running infinite hoveringFirst;
 }
 
 @media (max-width: 900px) {
@@ -202,5 +207,29 @@ main {
   }
   .diosespaz__valores > div {
     width: 100%;
+  }
+}
+
+@keyframes hoveringFirst {
+  from {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes hoveringSecond {
+  from {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
   }
 }

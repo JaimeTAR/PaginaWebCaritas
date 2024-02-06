@@ -239,4 +239,9 @@
   .valordonestitle > img {
     width: 225px;
   }
+
+  .sideimg{
+    scale: 8;
+    width: 10%;
+  }
 }
