@@ -11,6 +11,11 @@
   width: 300px;
 }
 
+.elarbol--first {
+  background-image: url(../images/elarbolbg.png);
+  background-size: contain;
+}
+
 .elarbol__video {
   display: grid;
   place-items: center;
@@ -30,6 +35,8 @@
 
 .elarbol--second {
   margin-bottom: 2.5rem;
+  background-image: url(../images/elarbolbg2.svg);
+  background-size: cover;
 }
 
 .elarbol__preguntas {
