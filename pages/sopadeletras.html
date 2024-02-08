@@ -12,7 +12,6 @@
   </head>
 
   <body>
-
     <header class="header--grid">
       <div class="logo">
         <a href="#">
@@ -96,22 +95,31 @@
     <main>
       <section class="sopadeletras--firstcontainer">
         <div class="start">
-          <img src="../images/###" alt="valoresydones" />
-          <br><br><br>
-          <p class = "frase">Dios se revela ante nosotros en forma de ...</p>
+          <img src="../images/valoresydones.svg" alt="valoresydones" />
+          <br /><br /><br />
+          <p class="frase">Dios se revela ante nosotros en forma de ...</p>
         </div>
-        <br><br><br>
+        <br /><br /><br />
         <div class="carta--sopa">
-            <div id ="contenedor"></div>
+          <div id="contenedor"></div>
         </div>
         <script>
-          var palabras = ['alegria', 'fraternidad', 'verdad',
-              'amor', 'misericordia', 'amistad',
-              'bondad', 'reconciliacion', 'armonia',
-              'justicia', 'perdon', 'cooperacion',
-              'solidaridad'
+          var palabras = [
+            "alegria",
+            "fraternidad",
+            "verdad",
+            "amor",
+            "misericordia",
+            "amistad",
+            "bondad",
+            "reconciliacion",
+            "armonia",
+            "justicia",
+            "perdon",
+            "cooperacion",
+            "solidaridad",
           ];
-          var sopaLetras = wordfindgame.create(palabras, '#contenedor', '#palabras-sopadeletras');
+          var sopaLetras = wordfindgame.create(palabras, "#contenedor", "#palabras-sopadeletras");
           $("#BTNrefresh").click(function () {
             window.location.href = window.location.href;
           });
