@@ -1,7 +1,9 @@
 @import url(style.css);
+
 .highlighted {
   color: #54291e;
 }
+
 .sopadeletras--firstcontainer {
   background-image: url(../images/###);
   background-repeat: no-repeat;
@@ -9,14 +11,17 @@
   background-position: top;
   padding-bottom: 4rem;
 }
+
 .start {
   padding-top: 1rem;
   text-align: center;
 }
+
 .start > img,
 .valordonestitle > img {
   width: 300px;
 }
+
 .frase {
   color: #d35b02;
   font-size: 150%;
@@ -25,6 +30,7 @@
   height: 100%;
   width: 100%;
 }
+
 .carta--sopa {
   margin-top: 5%;
   background-image: url(../images/carta.png);
@@ -33,15 +39,18 @@
   background-size: contain;
   padding: 5%;
 }
+
 #contenedor {
   text-align: center;
   padding: 5%;
   margin: auto;
 }
+
 #contenedor div {
   width: 100%;
   margin: 0 auto;
 }
+
 #contenedor .letra {
   text-align: center;
   height: 5vw;
@@ -52,17 +61,21 @@
   background-color: #e7e6e7;
   font: 0.7rem sans-serif;
 }
-#contenedor .selected {
+
+#contenedor .sdlselected {
   background-color: rgb(255, 136, 0);
 }
-#contenedor:hover .selected:hover {
+
+#contenedor:hover .sdlselected:hover {
   background-color: rgb(255, 136, 0);
   font-weight: bold;
 }
+
 #contenedor > div > button:hover {
   background-color: rgb(255, 215, 172);
   font-weight: bold;
 }
+
 #contenedor .found {
   background-color: #ff7b00;
   color: white;
@@ -70,17 +83,21 @@
   font-weight: bold;
   text-shadow: 0px 2px 3px #000;
 }
+
 #contenedor .found:hover {
   background-color: rgb(255, 215, 172);
   font-weight: bold;
 }
+
 #contenedor .solved {
   background-color: rgb(255, 136, 0);
   color: white;
 }
+
 #contenedor .complete {
   background-color: rgb(255, 102, 0);
 }
+
 #BTNrefresh {
   position: absolute;
   bottom: 0em;

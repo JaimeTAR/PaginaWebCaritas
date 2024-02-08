@@ -24,7 +24,7 @@
       s = [],
       i = "",
       d = function () {
-        t(this).addClass("selected"), (o = this), s.push(this), (i = t(this).text());
+        t(this).addClass("sdlselected"), (o = this), s.push(this), (i = t(this).text());
       },
       c = function (e) {
         if (o) {
@@ -36,9 +36,9 @@
                 break;
               }
             for (; r < s.length; )
-              t(s[s.length - 1]).removeClass("selected"), s.splice(r, 1), (i = i.substr(0, i.length - 1));
+              t(s[s.length - 1]).removeClass("sdlselected"), s.splice(r, 1), (i = i.substr(0, i.length - 1));
             var d = p(t(o).attr("x") - 0, t(o).attr("y") - 0, t(e).attr("x") - 0, t(e).attr("y") - 0);
-            d && ((s = [o]), (i = t(o).text()), n !== o && (t(n).removeClass("selected"), (n = o)), (a = d));
+            d && ((s = [o]), (i = t(o).text()), n !== o && (t(n).removeClass("sdlselected"), (n = o)), (a = d));
             var c = p(t(n).attr("x") - 0, t(n).attr("y") - 0, t(e).attr("x") - 0, t(e).attr("y") - 0);
             c && ((a && a !== c) || ((a = c), h(e)));
           }
@@ -56,15 +56,15 @@
       h = function (e) {
         for (var n = 0, o = r.length; o > n; n++)
           if (0 === r[n].indexOf(i + t(e).text())) {
-            t(e).addClass("selected"), s.push(e), (i += t(e).text());
+            t(e).addClass("sdlselected"), s.push(e), (i += t(e).text());
             break;
           }
       },
       z = function () {
         for (var e = 0, n = r.length; n > e; e++)
-          r[e] === i && (t(".selected").addClass("found"), r.splice(e, 1), t("." + i).addClass("palabraEncontrada")),
+          r[e] === i && (t(".sdlselected").addClass("found"), r.splice(e, 1), t("." + i).addClass("palabraEncontrada")),
             0 === r.length && t(".letra").addClass("complete");
-        t(".selected").removeClass("selected"), (o = null), (s = []), (i = ""), (a = null);
+        t(".sdlselected").removeClass("sdlselected"), (o = null), (s = []), (i = ""), (a = null);
       },
       p = function (e, t, r, o) {
         for (var a in n.orientations) {
