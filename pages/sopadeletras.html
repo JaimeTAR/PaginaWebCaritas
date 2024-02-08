@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cáritas Gdl</title>
     <link rel="shortcut icon" href="../images/logoheader.svg" />
     <link rel="stylesheet" href="../styles/sopadeletras.css" />
-</head>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+    <script src="../wordfind.js"></script>
+    <script src="../wordfindgame.js"></script>
+  </head>
+
   <body>
+
     <header class="header--grid">
       <div class="logo">
-        <a href="index.html">
+        <a href="#">
           <img src="../images/logoheader.svg" alt="Logo Cáritas" />
         </a>
       </div>
@@ -21,12 +26,12 @@
       </button>
       <nav class="navbar">
         <ul class="navbar__list">
-          <li class="navbar__item ">
+          <li class="navbar__item">
             <a class="navbar__link" href="index.html">Inicio</a>
           </li>
           <div class="separator"></div>
           <li class="navbar__item selected">
-            <a class="navbar__link" href="#">Sopa de letras</a>
+            <a class="navbar__link" href="sopadeletras.html">Sopa de letras</a>
           </li>
           <div class="separator"></div>
           <li class="navbar__item">
@@ -87,7 +92,31 @@
         </ul>
       </nav>
     </header>
-    
-    <script src="../script.js"></script>
+
+    <main>
+      <section class="sopadeletras--firstcontainer">
+        <div class="start">
+          <img src="../images/###" alt="valoresydones" />
+          <br><br><br>
+          <p class = "frase">Dios se revela ante nosotros en forma de ...</p>
+        </div>
+        <br><br><br>
+        <div class="carta--sopa">
+            <div id ="contenedor"></div>
+        </div>
+        <script>
+          var palabras = ['alegria', 'fraternidad', 'verdad',
+              'amor', 'misericordia', 'amistad',
+              'bondad', 'reconciliacion', 'armonia',
+              'justicia', 'perdon', 'cooperacion',
+              'solidaridad'
+          ];
+          var sopaLetras = wordfindgame.create(palabras, '#contenedor', '#palabras-sopadeletras');
+          $("#BTNrefresh").click(function () {
+            window.location.href = window.location.href;
+          });
+        </script>
+      </section>
+    </main>
   </body>
 </html>
