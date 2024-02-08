@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburger.addEventListener("click", function () {
     if (navbar.style.maxHeight === "1000px") {
       navbar.style.maxHeight = "0px";
+      dropdown__menu1.style.maxHeight = "0px";
+      dropdown__menu2.style.maxHeight = "0px";
     } else {
       navbar.style.maxHeight = "1000px";
     }
