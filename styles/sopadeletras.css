@@ -140,6 +140,23 @@
   margin: 0 auto;
 }
 
+.sdlsideimg {
+  width: 22%;
+  background-size: contain;
+  scale: 1.3;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sdlsideimg--book {
+  background-image: url(../images/sdlbook.svg);
+}
+
+.sdlsideimg--hands {
+  background-image: url(../images/sdlhands.svg);
+}
+
 @media (max-width: 900px) {
   .sopadeletras--firstcontainer {
     padding-bottom: 0;
