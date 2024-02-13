@@ -31,7 +31,7 @@
 }
 
 .carta--sopa {
-  margin-top: 5%;
+  margin-top: 3%;
   background-image: url(../images/carta.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -41,7 +41,8 @@
 
 #contenedor {
   text-align: center;
-  padding: 5%;
+  padding: 4%;
+  padding-top: 0;
   margin: auto;
 }
 
@@ -89,8 +90,8 @@
 }
 
 #contenedor .complete {
-  background-color: rgb(255, 215, 172);;
-  color:#ff5500;
+  background-color: rgb(255, 215, 172);
+  color: #ff5500;
 }
 
 #BTNrefresh {
@@ -116,7 +117,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
 }
 
@@ -150,12 +151,12 @@
     padding: 6%;
     margin: auto;
   }
-  
+
   #contenedor div {
     width: 100%;
     margin: 0 auto;
   }
-  
+
   #contenedor .letra {
     text-align: center;
     height: 5vw;
@@ -170,17 +171,17 @@
   #contenedor .sdlselected {
     background-color: rgb(255, 136, 0);
   }
-  
+
   #contenedor:hover .sdlselected:hover {
     background-color: rgb(255, 136, 0);
     font-weight: bold;
   }
-  
+
   #contenedor > div > button:hover {
     background-color: rgb(255, 215, 172);
     font-weight: bold;
   }
-  
+
   #contenedor .found {
     background-color: #ff7b00;
     color: white;
@@ -188,22 +189,22 @@
     font-weight: bold;
     text-shadow: 0px 2px 3px #000;
   }
-  
+
   #contenedor .found:hover {
     background-color: rgb(255, 215, 172);
     font-weight: bold;
   }
-  
+
   #contenedor .solved {
     background-color: rgb(255, 136, 0);
     color: white;
   }
-  
+
   #contenedor .complete {
-    background-color: rgb(255, 215, 172);;
-    color:#ff5500;
+    background-color: rgb(255, 215, 172);
+    color: #ff5500;
   }
-  
+
   #BTNrefresh {
     position: absolute;
     bottom: 0em;
@@ -236,7 +237,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-   
   }
 
   #contenedor {
@@ -244,12 +244,12 @@
     padding: 10%;
     margin: auto;
   }
-  
+
   #contenedor div {
     width: 100%;
     margin: 0 auto;
   }
-  
+
   #contenedor .letra {
     text-align: center;
     height: 5vw;
@@ -264,17 +264,17 @@
   #contenedor .sdlselected {
     background-color: rgb(255, 136, 0);
   }
-  
+
   #contenedor:hover .sdlselected:hover {
     background-color: rgb(255, 136, 0);
     font-weight: bold;
   }
-  
+
   #contenedor > div > button:hover {
     background-color: rgb(255, 215, 172);
     font-weight: bold;
   }
-  
+
   #contenedor .found {
     background-color: #ff7b00;
     color: white;
@@ -282,22 +282,22 @@
     font-weight: bold;
     text-shadow: 0px 2px 3px #000;
   }
-  
+
   #contenedor .found:hover {
     background-color: rgb(255, 215, 172);
     font-weight: bold;
   }
-  
+
   #contenedor .solved {
     background-color: rgb(255, 136, 0);
     color: white;
   }
-  
+
   #contenedor .complete {
-    background-color: rgb(255, 215, 172);;
-    color:#ff5500;
+    background-color: rgb(255, 215, 172);
+    color: #ff5500;
   }
-  
+
   #BTNrefresh {
     position: absolute;
     bottom: 0em;
