@@ -7,13 +7,14 @@
 }
 
 :root {
-  --bg-color: #fff2e2;
-  --navbar-bg-color: rgb(255, 213, 165, 0.9);
-  --navbar-bg-color-mobile: rgb(255, 213, 165);
-  --navbar-bg-color-dropdown: rgb(212, 103, 0);
-  --navbar-separator-color: rgb(212, 103, 0, 0.2);
-  --navbar-text-color: rgb(212, 103, 0);
-  --navbar-mobile-menu-icon: rgb(212, 103, 0);
+  --bg-color-1: #fff2e2;
+  --bg-color-2: #ffd4a3;
+  --navbar-bg-color: #ffd5a5e6;
+  --navbar-bg-color-mobile: #ffd5a5;
+  --navbar-bg-color-dropdown: #d46700;
+  --navbar-separator-color: #d4670033;
+  --navbar-text-color: #d46700;
+  --navbar-mobile-menu-icon: #d46700;
   font-family: "Montserrat", Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -42,7 +43,7 @@
 body {
   font-family: inherit;
   margin: 0;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-1);
 }
 
 body::before {
@@ -202,7 +203,6 @@ p {
 }
 
 .dropdown__item {
-  
   padding-block: 5px;
   padding-inline: 5px;
 }
@@ -317,7 +317,7 @@ p {
 
 .aboutus {
   position: relative;
-  background-color: #ffd5a5;
+  background-color: var(--bg-color-2);
   width: 100%;
   height: 100%;
 }
@@ -333,7 +333,7 @@ p {
 }
 
 .aboutus__title {
-  color: #fff2e2;
+  color: var(--bg-color-1);
   margin-top: 5%;
   text-transform: uppercase;
   width: fit-content;
@@ -372,8 +372,7 @@ p {
 
 .card {
   min-height: fit-content;
-
-  background-color: #fff2e2;
+  background-color: var(#fff2e2);
   border-radius: 5vh;
   width: 100%;
 }
@@ -545,13 +544,12 @@ p {
     width: 100%;
     display: block;
     padding: 0;
-  
   }
 
-  .navbar__item, .dropdown__item {
+  .navbar__item,
+  .dropdown__item {
     padding-block: 15px;
   }
-
 
   .navbar__item:hover {
     outline: none;
@@ -585,23 +583,24 @@ p {
     background-color: var(--navbar-mobile-menu-icon);
   }
 
-  .separator--dropdown, .separator  {
+  .separator--dropdown,
+  .separator {
     display: none;
   }
 
-  .dropdown__menu{
+  .dropdown__menu {
     margin: 0;
     margin-top: 10px;
     border-radius: 0;
     position: relative;
-    transition: max-height .5s ease-in;
+    transition: max-height 0.5s ease-in;
   }
 
-  .dropdown__item{
-    background-color: var(--navbar-bg-color-dropdown); 
+  .dropdown__item {
+    background-color: var(--navbar-bg-color-dropdown);
   }
 
-  .dropdown__item > a{
+  .dropdown__item > a {
     color: var(--navbar-bg-color);
   }
 
@@ -610,7 +609,7 @@ p {
     background-color: rgb(255, 183, 101);
   }
 
-  .selected--dropdown > a{
+  .selected--dropdown > a {
     color: var(--navbar-bg-color-dropdown);
   }
   /* Fin de la navbar */
@@ -675,4 +674,3 @@ p {
     gap: 20px;
   }
 }
-
