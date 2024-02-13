@@ -1,1 +1,16 @@
 @import url(style.css);
+
+.titulo1{
+    text-align: center;
+
+  }
+p{
+    color: rgb(211,91,2);
+    background-color:rgba(red, green, rgba(0, 0, 255, 0), alpha);
+    margin: 0%;
+    font-size: 2rem;
+    font-weight: 800;  
+}
+.Parrafo1{
+    
+}
