@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   var n = function () {
-    var n = "abcdefghijklmnoprstuvwyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóú",
+    var n = "ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚ",
       r = [
         "horizontal",
         "horizontalBack",
