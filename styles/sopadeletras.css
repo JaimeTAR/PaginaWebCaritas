@@ -1,5 +1,9 @@
 @import url(style.css);
 
+body{
+  overflow-x: hidden;
+}
+
 .highlighted {
   color: #54291e;
 }
@@ -24,7 +28,6 @@
 .start--focos{
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .focoinvis{
