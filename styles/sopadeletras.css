@@ -24,6 +24,7 @@
 .start--focos{
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .focoinvis{

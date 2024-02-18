@@ -46,7 +46,7 @@ body {
   background-color: var(--bg-color-1);
 }
 
-body::before {
+body::before{
   position: absolute;
   content: "";
   width: 100%;
