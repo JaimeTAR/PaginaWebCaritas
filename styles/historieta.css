@@ -1,1 +1,18 @@
 @import url(style.css);
+
+.historieta__title {
+    text-align: center;
+}
+
+.historieta__imagen {
+    text-align: center;
+    margin-left: 23px;
+    margin-right: 5px;
+    transform: translate(0%, -2.5%);
+}
+
+.images {
+    text-align: center;
+    position: relative;
+    transform: translate(-34%, -650%);
+}
