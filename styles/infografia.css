@@ -1,18 +1,21 @@
 @import url(style.css);
 
 .infografia--first {
-background-image: url(../images/sopadeletrasbg.png);
-background-repeat: no-repeat;
-background-size: contain;
-background-position: top;
-padding-bottom: 4rem;
+    background-image: url(../images/elarbolbg2.svg); /*Colocar respectivo bg*/
+    background-size:cover;
 }
 
-.start {
-padding-top: 1rem;
-text-align: center;
+.infografia--title > img{
+  width: 300px;
+  padding-bottom: 2%;
 }
 
-.start > img {
-width: 300px;
+.infografia--title {
+  text-align: center;
+  padding-bottom: 1rem;
 }
+
+.infografia {
+    text-align: center;
+}
+
