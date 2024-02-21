@@ -13,7 +13,7 @@
 
 .elarbol--first {
   background-image: url(../images/elarbolbg.png);
-  background-size: contain;
+  background-size:cover;
 }
 
 .elarbol__video {

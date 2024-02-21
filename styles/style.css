@@ -46,7 +46,7 @@ body {
   background-color: var(--bg-color-1);
 }
 
-body::before {
+body::before{
   position: absolute;
   content: "";
   width: 100%;
@@ -280,7 +280,8 @@ p {
 }
 
 .hero__kids > img {
-  width: min(35vw, 45vh);
+  flex-shrink: 0;
+  width: max(25vw, 25vh);
   aspect-ratio: 102/120;
   scale: 1;
   transition: all 0.25s ease;
@@ -307,6 +308,7 @@ p {
 
 .kid3 {
   transform: translateX(-60px);
+  
 }
 
 .kid3:hover {
@@ -372,7 +374,7 @@ p {
 
 .card {
   min-height: fit-content;
-  background-color: var(#fff2e2);
+  background-color: #fff2e2;
   border-radius: 5vh;
   width: 100%;
 }

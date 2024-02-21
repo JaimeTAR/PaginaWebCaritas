@@ -1,5 +1,9 @@
 @import url(style.css);
 
+body{
+  overflow-x: hidden;
+}
+
 .highlighted {
   color: #54291e;
 }
