@@ -1,1 +1,18 @@
 @import url(style.css);
+
+.infografia--first {
+background-image: url(../images/sopadeletrasbg.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: top;
+padding-bottom: 4rem;
+}
+
+.start {
+padding-top: 1rem;
+text-align: center;
+}
+
+.start > img {
+width: 300px;
+}
