@@ -1,25 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
   function randomInt() {
-    return Math.floor(Math.random() * 5);
+    return Math.ceil(Math.random() * 6);
   }
 
-  const cello = document.querySelector(".cello");
+  const cello = document.querySelector(".violonchelo");
 
-  const note1 = document.querySelector(".note1");
-  const note2 = document.querySelector(".note2");
-  const note3 = document.querySelector(".note3");
-  const note4 = document.querySelector(".note4");
-  const note5 = document.querySelector(".note5");
-
-  const availableSounds = [note1, note2, note3, note4, note5];
-
-  availableSounds.forEach((audio) => {
-    audio.volume = 0.1;
-  });
+  const section = document.querySelector(".lapaz__ejemplo__info");
 
   cello.addEventListener("click", function () {
-    let currentNote = availableSounds[randomInt()];
-    currentNote.currentTime = 0;
-    currentNote.play();
+    var audio = document.createElement("audio");
+    // audio.className = "prueba";
+    var source = document.createElement("source");
+    source.src = `../audio/notes/Note${randomInt()}.mp3`;
+    audio.volume = 0.8;
+    audio.append(source);
+    section.append(audio);
+    audio.play();
+    setTimeout(() => {
+      audio.remove();
+    }, 2000);
   });
 });

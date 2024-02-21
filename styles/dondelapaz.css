@@ -57,13 +57,18 @@ main {
   max-width: 90%;
 }
 
+.lapaz__second > div {
+  height: 100%;
+}
+
 .violonchelo {
+  position: relative;
   width: 220px;
   aspect-ratio: 463/792;
   float: left;
   shape-outside: polygon(0px 0px, 69.5% 0px, 69.5% 60%, 92.5% 60%, 91.5% 90%, 0px 90%);
-
   transform: translateX(-30px);
+  z-index: 100;
 }
 
 .handgift {
@@ -121,8 +126,6 @@ main {
 .transformarnos--title {
   width: 80%;
 }
-
-
 
 .ayudarnos--icon {
   width: 80%;

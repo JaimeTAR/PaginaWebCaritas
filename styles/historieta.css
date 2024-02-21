@@ -1,18 +1,36 @@
 @import url(style.css);
 
+.historieta {
+  overflow: hidden;
+}
+
 .historieta__title {
-    text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.historieta__title {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.invis {
+  opacity: 0;
+}
+
+.estrella {
+  transform: translate(-10px, 90px);
+}
+
+.prueba {
+  height: fit-content;
 }
 
 .historieta__imagen {
-    text-align: center;
-    margin-left: 23px;
-    margin-right: 5px;
-    transform: translate(0%, -2.5%);
-}
-
-.images {
-    text-align: center;
-    position: relative;
-    transform: translate(-34%, -650%);
+  text-align: center;
+  margin-left: 23px;
+  margin-right: 5px;
+  transform: translate(0%, -2.5%);
 }
