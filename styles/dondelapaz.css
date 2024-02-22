@@ -6,6 +6,26 @@ body {
   line-height: 1.5rem;
 }
 
+body {
+  position: relative;
+}
+
+.image-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+}
+
+.image-wrapper.hovering {
+  transform: translate(-50%, -120%);
+  transition: transform 1s ease-out;
+}
+
+.image-wrapper.fade-out {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
 main {
   background-image: url(../images/dondelapazbg.png);
   background-size: contain;
