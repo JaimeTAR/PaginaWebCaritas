@@ -12,7 +12,7 @@
 }
 
 .elarbol--first {
-  background-image: url(../images/elarbolbg.png);
+  background-image: url(../images/elarbol/elarbolbg.png);
   background-size:cover;
 }
 
@@ -35,7 +35,7 @@
 
 .elarbol--second {
   margin-bottom: 2.5rem;
-  background-image: url(../images/elarbolbg2.svg);
+  background-image: url(../images/elarbol/elarbolbg2.svg);
   background-size: cover;
 }
 
@@ -76,34 +76,34 @@
 }
 
 .uno::before {
-  background-image: url(../images/uno.png);
+  background-image: url(../images/numeros/uno.png);
 }
 
 .dos::before {
-  background-image: url(../images/dos.png);
+  background-image: url(../images/numeros/dos.png);
 }
 
 .tres::before {
-  background-image: url(../images/tres.png);
+  background-image: url(../images/numeros/tres.png);
 }
 
 .cuatro::before {
-  background-image: url(../images/cuatro.png);
+  background-image: url(../images/numeros/cuatro.png);
 }
 
 .cinco::before {
-  background-image: url(../images/cinco.png);
+  background-image: url(../images/numeros/cinco.png);
 }
 .seis::before {
-  background-image: url(../images/seis.png);
+  background-image: url(../images/numeros/seis.png);
 }
 
 .siete::before {
-  background-image: url(../images/siete.png);
+  background-image: url(../images/numeros/siete.png);
 }
 
 .ocho::before {
-  background-image: url(../images/ocho.png);
+  background-image: url(../images/numeros/ocho.png);
 }
 
 @media (max-width: 900px) {

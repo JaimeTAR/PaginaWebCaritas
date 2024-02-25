@@ -238,7 +238,7 @@ p {
 
 .hero {
   position: relative;
-  background-image: url(../images/herobg.png);
+  background-image: url(../images/index/herobg.png);
   background-size: cover;
   background-position: top;
 }
@@ -340,7 +340,7 @@ p {
   text-transform: uppercase;
   width: fit-content;
   height: fit-content;
-  background-image: url(../images/aboutus__btn.png);
+  background-image: url(../images/index/aboutus__btn.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 0.3em 0.7em;

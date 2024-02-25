@@ -1,7 +1,7 @@
 @import url(style.css);
 
 main{
-  background-image: url(../images/reyoreinabg.png);
+  background-image: url(../images/reyoreina/reyoreinabg.png);
   background-repeat: repeat;
   background-position: center;
 }
@@ -39,10 +39,6 @@ main{
   min-height: 80px;
 }
 
-.instrucciones__number {
-  display: none;
-}
-
 .paso::before {
   content: "";
   position: absolute;
@@ -55,15 +51,15 @@ main{
 }
 
 .paso:nth-of-type(1)::before {
-  background-image: url(../images/uno.png);
+  background-image: url(../images/numeros/uno.png);
 }
 .paso:nth-of-type(2)::before {
-  background-image: url(../images/dos.png);
+  background-image: url(../images/numeros/dos.png);
   top: 25%;
 }
 
 .paso:nth-of-type(4)::before {
-  background-image: url(../images/tres.png);
+  background-image: url(../images/numeros/tres.png);
 }
 
 .crown {
@@ -134,11 +130,11 @@ main{
 }
 
 .sideimg--queen {
-  background-image: url(../images/reina.svg);
+  background-image: url(../images/reyoreina/reina.svg);
 }
 
 .sideimg--king {
-  background-image: url(../images/rey.svg);
+  background-image: url(../images/reyoreina/rey.svg);
 }
 
 @keyframes crownfloat {

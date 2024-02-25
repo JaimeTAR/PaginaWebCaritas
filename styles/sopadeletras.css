@@ -9,7 +9,7 @@ body{
 }
 
 .sopadeletras--firstcontainer {
-  background-image: url(../images/sopadeletrasbg.png);
+  background-image: url(../images/sopadeletras/sopadeletrasbg.png);
   background-size: contain;
   background-position: top;
   padding-bottom: 4rem;
@@ -45,7 +45,7 @@ body{
 
 .carta--sopa {
   margin-top: 3%;
-  background-image: url(../images/carta.png);
+  background-image: url(../images/sopadeletras/carta.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -112,7 +112,7 @@ body{
 }
 
 .sopadeletras--secondcontainer {
-  background-image: url(../images/valordonesbg.png);
+  background-image: url(../images/sopadeletras/valordonesbg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -164,19 +164,19 @@ body{
 }
 
 .sdlsideimg--book {
-  background-image: url(../images/sdlbook.svg);
+  background-image: url(../images/sopadeletras/sdlbook.svg);
   animation: 5s ease-in-out running infinite floatanimation;
   height: 100px;
 }
 
 .sdlsideimg--hands {
-  background-image: url(../images/sdlhands.svg);
+  background-image: url(../images/sopadeletras/sdlhands.svg);
   animation: 3s ease-in-out running infinite floatanimation;
   height: 120px;
 }
 
 .sdlsideimg--foco {
-  background-image: url(../images/sdlfoco.svg);
+  background-image: url(../images/sopadeletras/sdlfoco.svg);
   height: 150px;
   animation: 3s ease-in-out running infinite floatanimation;
   border-top: 15%;
