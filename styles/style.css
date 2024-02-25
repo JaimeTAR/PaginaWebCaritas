@@ -209,6 +209,7 @@ p {
 
 .dropdown__item > a {
   text-decoration: none;
+  text-transform: capitalize;
   color: #d35b02;
 }
 

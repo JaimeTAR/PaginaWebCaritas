@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var img = document.createElement("img");
     img.src = `../images/dondelapaz/imgnote${randomInt(1, 3)}.png`;
-    img.alt = "myimage";
+    img.alt = "Nota musical";
     img.style.filter = colorFilters[randomInt(0, 7)];
     img.style.width = randomInt(20, 40) + "px";
 
