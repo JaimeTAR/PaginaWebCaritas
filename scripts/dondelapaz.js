@@ -1,14 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function randomInt(min, max) {
-    return Math.floor(Math.random() * max) + min;
-  }
-
   const cello = document.querySelector(".violonchelo");
 
   const section = document.querySelector(".lapaz__ejemplo__info");
 
   var fadeDelay = 1000;
   var fadeDuration = 1000;
+
+  // filter: invert(26%) sepia(77%) saturate(7099%) hue-rotate(357deg) brightness(102%) contrast(133%); RED
+  // filter: invert(100%) sepia(45%) saturate(4157%) hue-rotate(360deg) brightness(108%) contrast(108%); YELLOW
+  // filter: invert(92%) sepia(93%) saturate(2218%) hue-rotate(49deg) brightness(95%) contrast(112%); GREEN
+  // filter: invert(80%) sepia(92%) saturate(660%) hue-rotate(106deg) brightness(102%) contrast(107%); BABY BLUE
+  // filter: invert(11%) sepia(100%) saturate(3880%) hue-rotate(241deg) brightness(109%) contrast(153%); BLUE
+  // filter: invert(11%) sepia(91%) saturate(6726%) hue-rotate(272deg) brightness(95%) contrast(123%); PURPLE
+  // filter: invert(35%) sepia(40%) saturate(5174%) hue-rotate(280deg) brightness(107%) contrast(113%); PINK
+  // filter: invert(48%) sepia(80%) saturate(1150%) hue-rotate(359deg) brightness(99%) contrast(103%); ORANGE
+
+  const colorFilters = [
+    "invert(26%) sepia(77%) saturate(7099%) hue-rotate(357deg) brightness(102%) contrast(133%)",
+    "invert(100%) sepia(45%) saturate(4157%) hue-rotate(360deg) brightness(108%) contrast(108%)",
+    "invert(92%) sepia(93%) saturate(2218%) hue-rotate(49deg) brightness(95%) contrast(112%)",
+    "invert(80%) sepia(92%) saturate(660%) hue-rotate(106deg) brightness(102%) contrast(107%)",
+    "invert(11%) sepia(100%) saturate(3880%) hue-rotate(241deg) brightness(109%) contrast(153%)",
+    "invert(11%) sepia(91%) saturate(6726%) hue-rotate(272deg) brightness(95%) contrast(123%)",
+    "invert(35%) sepia(40%) saturate(5174%) hue-rotate(280deg) brightness(107%) contrast(113%)",
+    "invert(48%) sepia(80%) saturate(1150%) hue-rotate(359deg) brightness(99%) contrast(103%)",
+  ];
 
   cello.addEventListener("click", function (e) {
     // Aparición de nota musical
@@ -20,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var img = document.createElement("img");
     img.src = `../images/dondelapaz/imgnote${randomInt(1, 3)}.png`;
     img.alt = "myimage";
-    img.style.width = randomInt(30, 50) + "px";
+    img.style.filter = colorFilters[randomInt(0, 7)];
+    img.style.width = randomInt(20, 40) + "px";
 
     div.appendChild(img);
     document.body.appendChild(div);
@@ -47,3 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2000);
   });
 });
+
+function randomInt(min, max) {
+  return Math.floor(Math.random() * max) + min;
+}
