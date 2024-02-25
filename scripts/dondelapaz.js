@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var audio = document.createElement("audio");
     var audioSrc = document.createElement("source");
     audioSrc.src = `../audio/notes/Note${randomInt(1, 8)}.mp3`;
-    audio.volume = 0.8;
+    audio.volume = 0.6;
     audio.append(audioSrc);
     section.append(audio);
     audio.play();
