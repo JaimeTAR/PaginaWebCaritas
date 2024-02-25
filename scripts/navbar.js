@@ -2,8 +2,8 @@
 
 const dictionarySelected = {
   index: "Inicio",
-  sopadeletras: "Sopa de letras",
-  reyoreina: "Rey o reina",
+  sopadeletras: "Sopa de la caridad",
+  reyoreina: "Rey y reina",
   dondelapaz: "Don de la paz",
   elarbol: "El árbol",
   meditacioncondios: "Meditación con dios",
@@ -61,12 +61,9 @@ ul.className = "navbar__list";
 const menuItems = [
   { text: "Inicio", href: currentPage === "index" ? "#" : "index.html" },
   {
-    text: "Sopa de letras",
-    href: currentPage === "sopadeletras" ? "#" : "sopadeletras.html",
-  },
-  {
-    text: "Rey o reina",
-    href: currentPage === "reyoreina" ? "#" : "reyoreina.html",
+    text: "Juegos interactivos",
+    href: "#",
+    dropdown: true,
   },
   {
     text: "Don de la paz",
@@ -83,6 +80,48 @@ const menuItems = [
 var nthDropdown = 0;
 
 const dropdownItemsList = [
+  [
+    {
+      text: "Sopa de la caridad",
+      href: currentPage === "sopadeletras" ? "#" : "sopadeletras.html",
+    },
+    {
+      text: "Rey y reina",
+      href: currentPage === "reyoreina" ? "#" : "reyoreina.html",
+    },
+    {
+      text: "Laberinto de la solidaridad",
+      href: "#",
+    },
+    {
+      text: "Termómetro familiar",
+      href: "#",
+    },
+    {
+      text: "Anti-valores",
+      href: "#",
+    },
+    {
+      text: "Enlace de valor",
+      href: "#",
+    },
+    {
+      text: "Círculos del valor",
+      href: "#",
+    },
+    {
+      text: "Dibuja amor",
+      href: "#",
+    },
+    {
+      text: "Solidaridad",
+      href: "#",
+    },
+    {
+      text: "Acciones de cambio",
+      href: "#",
+    },
+  ],
   [
     {
       text: "Meditación con dios",
@@ -136,14 +175,13 @@ menuItems.forEach((element, idx, array) => {
   if (element.dropdown) {
     nthDropdown++;
     const dropdownToggle = document.createElement("a");
-    dropdownToggle.className = `navbar__link dropdown__toggle${nthDropdown}`;
+    dropdownToggle.className = `navbar__link dropdown__toggle`;
     dropdownToggle.draggable = false;
     dropdownToggle.href = element.href;
     dropdownToggle.innerHTML = `${element.text} <b>▼</b>`;
 
     const dropdownMenu = document.createElement("div");
-    dropdownMenu.className = `dropdown__menu--${nthDropdown}`;
-    dropdownMenu.classList.add("dropdown__menu");
+    dropdownMenu.className = `dropdown__menu`;
     dropdownMenu.style.maxHeight = "0px";
 
     const dropdownItems = dropdownItemsList[nthDropdown - 1];
@@ -201,31 +239,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Inicio Dropdown menu
 
-  const dropdown__toggle1 = document.querySelector(".dropdown__toggle1");
-  const dropdown__toggle2 = document.querySelector(".dropdown__toggle2");
-  const dropdown__menu1 = document.querySelector(".dropdown__menu--1");
-  const dropdown__menu2 = document.querySelector(".dropdown__menu--2");
+  const dropdownToggles = document.querySelectorAll(".dropdown__toggle");
+  const dropdownMenus = document.querySelectorAll(".dropdown__menu");
 
-  dropdown__toggle1.addEventListener("click", function () {
-    if (dropdown__menu1.style.maxHeight === "0px") {
-      dropdown__menu1.style.maxHeight = "400px";
-    } else {
-      dropdown__menu1.style.maxHeight = "0px";
-    }
-    if (dropdown__menu2.style.maxHeight === "400px") {
-      dropdown__menu2.style.maxHeight = "0px";
-    }
-  });
+  dropdownToggles.forEach((toggle, index) => {
+    toggle.addEventListener("click", function () {
+      const targetMenu = dropdownMenus[index];
+      const otherMenus = Array.from(dropdownMenus).filter(
+        (menu) => menu !== targetMenu
+      );
 
-  dropdown__toggle2.addEventListener("click", function () {
-    if (dropdown__menu2.style.maxHeight === "0px") {
-      dropdown__menu2.style.maxHeight = "400px";
-    } else {
-      dropdown__menu2.style.maxHeight = "0px";
-    }
-    if (dropdown__menu1.style.maxHeight === "400px") {
-      dropdown__menu1.style.maxHeight = "0px";
-    }
+      if (targetMenu.style.maxHeight === "0px") {
+        targetMenu.style.maxHeight = "500px";
+      } else {
+        targetMenu.style.maxHeight = "0px";
+      }
+
+      otherMenus.forEach((menu) => {
+        menu.style.maxHeight = "0px";
+      });
+    });
   });
 
   const hamburger = document.querySelector(".hamburger");
