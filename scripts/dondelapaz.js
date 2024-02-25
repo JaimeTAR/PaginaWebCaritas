@@ -53,11 +53,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reproducción del audio
     var audio = document.createElement("audio");
-    var audioSrc = document.createElement("source");
-    audioSrc.src = `../audio/notes/Note${randomInt(1, 8)}.mp3`;
-    audio.volume = 0.6;
-    audio.append(audioSrc);
+    var audioSrcMp3 = document.createElement("source");
+    var audioSrcOgg = document.createElement("source");
+
+    var noteNum = randomInt(1, 8);
+
+    audioSrcMp3.src = `../audio/notes/Note${noteNum}.mp3`;
+    audioSrcOgg.src = `../audio/notes/Note${noteNum}.ogg`;
+    audio.append(audioSrcMp3);
+    audio.append(audioSrcOgg);
     section.append(audio);
+    audio.volume = 0.6;
     audio.play();
     setTimeout(() => {
       audio.remove();
