@@ -14,6 +14,14 @@ const dictionarySelected = {
   historieta: "Historieta",
   buzonybote: "Buzón y bote",
   planilla: "Planilla",
+  accionesdecambio: "Acciones de cambio",
+  antivalores: "Anti-valores",
+  circulosdevalor: "Círculos del valor",
+  dibujaamor: "Dibuja amor",
+  enlacedevalor: "Enlace de valor",
+  laberinto: "Laberinto de la solidaridad",
+  solidaridad: "Solidaridad",
+  termometro: "Termómetro familiar",
 };
 
 const currentPage = location.href.split("/").pop().split("?").shift().split(".").shift();
@@ -85,35 +93,35 @@ const dropdownItemsList = [
     },
     {
       text: "Laberinto de la solidaridad",
-      href: "#",
+      href: currentPage === "laberinto" ? "#" : "laberinto.html",
     },
     {
       text: "Termómetro familiar",
-      href: "#",
+      href: currentPage === "termometro" ? "#" : "termometro.html",
     },
     {
       text: "Anti-valores",
-      href: "#",
+      href: currentPage === "antivalores" ? "#" : "antivalores.html",
     },
     {
       text: "Enlace de valor",
-      href: "#",
+      href: currentPage === "enlacedevalor" ? "#" : "enlacedevalor.html",
     },
     {
       text: "Círculos del valor",
-      href: "#",
+      href: currentPage === "circulosdevalor" ? "#" : "circulosdevalor.html",
     },
     {
       text: "Dibuja amor",
-      href: "#",
+      href: currentPage === "dibujaamor" ? "#" : "dibujaamor.html",
     },
     {
       text: "Solidaridad",
-      href: "#",
+      href: currentPage === "solidaridad" ? "#" : "solidaridad.html",
     },
     {
       text: "Acciones de cambio",
-      href: "#",
+      href: currentPage === "accionesdecambio" ? "#" : "accionesdecambio.html",
     },
   ],
   [
@@ -258,8 +266,6 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburger.addEventListener("click", function () {
     if (navbar.style.maxHeight === "1000px") {
       navbar.style.maxHeight = "0px";
-      dropdown__menu1.style.maxHeight = "0px";
-      dropdown__menu2.style.maxHeight = "0px";
     } else {
       navbar.style.maxHeight = "1000px";
     }
