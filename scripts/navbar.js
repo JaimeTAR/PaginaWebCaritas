@@ -1,4 +1,4 @@
-// Inicio creacion del menu con js
+// Inicio creacion de la navbar con js
 
 const dictionarySelected = {
   index: "Inicio",
@@ -16,13 +16,7 @@ const dictionarySelected = {
   planilla: "Planilla",
 };
 
-const currentPage = location.href
-  .split("/")
-  .pop()
-  .split("?")
-  .shift()
-  .split(".")
-  .shift();
+const currentPage = location.href.split("/").pop().split("?").shift().split(".").shift();
 
 const header = document.createElement("header");
 header.className = "header--grid";
@@ -125,8 +119,7 @@ const dropdownItemsList = [
   [
     {
       text: "Meditación con dios",
-      href:
-        currentPage === "meditacioncondios" ? "#" : "meditacioncondios.html",
+      href: currentPage === "meditacioncondios" ? "#" : "meditacioncondios.html",
     },
     {
       text: "La oración",
@@ -231,7 +224,7 @@ menuItems.forEach((element, idx, array) => {
 nav.appendChild(ul);
 header.appendChild(nav);
 
-// Final creacion del menu con js
+// Final creacion de la navbar con js
 
 document.addEventListener("DOMContentLoaded", function () {
   // Append de la navbar
@@ -245,9 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
   dropdownToggles.forEach((toggle, index) => {
     toggle.addEventListener("click", function () {
       const targetMenu = dropdownMenus[index];
-      const otherMenus = Array.from(dropdownMenus).filter(
-        (menu) => menu !== targetMenu
-      );
+      const otherMenus = Array.from(dropdownMenus).filter((menu) => menu !== targetMenu);
 
       if (targetMenu.style.maxHeight === "0px") {
         targetMenu.style.maxHeight = "500px";
