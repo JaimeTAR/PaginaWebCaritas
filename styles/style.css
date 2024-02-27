@@ -46,7 +46,7 @@ body {
   background-color: var(--bg-color-1);
 }
 
-body::before{
+body::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -309,7 +309,6 @@ p {
 
 .kid3 {
   transform: translateX(-60px);
-  
 }
 
 .kid3:hover {
@@ -321,6 +320,8 @@ p {
 .aboutus {
   position: relative;
   background-color: var(--bg-color-2);
+  background-image: url(../images/index/infobg.png);
+  background-size: 100%;
   width: 100%;
   height: 100%;
 }

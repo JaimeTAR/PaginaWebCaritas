@@ -1,6 +1,7 @@
 // Inicio creacion de la navbar con js
 
 const dictionarySelected = {
+  "": "Inicio",
   index: "Inicio",
   sopadeletras: "Sopa de la caridad",
   reyoreina: "Rey y reina",
