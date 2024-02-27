@@ -85,7 +85,14 @@ main {
   width: 220px;
   aspect-ratio: 463/792;
   float: left;
-  shape-outside: polygon(0px 0px, 69.5% 0px, 69.5% 60%, 92.5% 60%, 91.5% 90%, 0px 90%);
+  shape-outside: polygon(
+    0px 0px,
+    69.5% 0px,
+    69.5% 60%,
+    92.5% 60%,
+    91.5% 90%,
+    0px 90%
+  );
   transform: translateX(-30px);
 }
 
@@ -179,7 +186,14 @@ main {
 
   .violonchelo {
     width: 150px;
-    shape-outside: polygon(0px 0px, 69.5% 0px, 69.5% 60%, 92.5% 60%, 91.5% 95%, 0px 99%);
+    shape-outside: polygon(
+      0px 0px,
+      69.5% 0px,
+      69.5% 60%,
+      92.5% 60%,
+      91.5% 95%,
+      0px 99%
+    );
   }
 
   .handgift {
