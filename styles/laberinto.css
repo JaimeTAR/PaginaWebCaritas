@@ -1,1 +1,42 @@
 @import url(style.css);
+
+p {
+  color: var(--navbar-text-color);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.5em;
+  font-size: 1.25rem;
+}
+
+.lab__info {
+  text-align: center;
+}
+
+.lab__info > p {
+  margin-block: 2.5%;
+}
+
+.laberinth {
+  display: flex;
+  justify-content: center;
+}
+
+.game {
+  position: relative;
+}
+
+.game::before {
+  content: url(../images/laberinto/pencil.png);
+  position: absolute;
+  top: 15%;
+}
+
+.laberinth__game {
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  transform: translate(-60%, -15%);
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+}
