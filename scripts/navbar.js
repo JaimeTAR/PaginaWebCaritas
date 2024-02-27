@@ -16,7 +16,7 @@ const dictionarySelected = {
   planilla: "Planilla",
   accionesdecambio: "Acciones de cambio",
   antivalores: "Anti-valores",
-  circulosdevalor: "Círculos del valor",
+  circulosdelvalor: "Círculos del valor",
   dibujaamor: "Dibuja amor",
   enlacedevalor: "Enlace de valor",
   laberinto: "Laberinto de la solidaridad",
@@ -109,7 +109,7 @@ const dropdownItemsList = [
     },
     {
       text: "Círculos del valor",
-      href: currentPage === "circulosdevalor" ? "#" : "circulosdevalor.html",
+      href: currentPage === "circulosdelvalor" ? "#" : "circulosdelvalor.html",
     },
     {
       text: "Dibuja amor",
