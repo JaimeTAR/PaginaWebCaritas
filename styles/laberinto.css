@@ -33,10 +33,20 @@ p {
 
 .laberinth__game {
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 60%;
-  transform: translate(-60%, -15%);
-  width: 500px;
-  height: 500px;
-  background-color: blue;
+  transform: translate(-60%, -25%);
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../images/laberinto/placeholder.png);
+  background-size: contain;
+}
+
+.laberinth__game::before {
+  content: url(../images/laberinto/kids.png);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
 }
