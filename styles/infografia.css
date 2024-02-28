@@ -1,8 +1,9 @@
 @import url(style.css);
 
 .infografia--first {
-    background-image: url(../images/elarbolbg2.svg); /*Colocar respectivo bg*/
-    background-size:cover;
+    background-image: url(../images/infografia/infografiabg.png); /*Colocar respectivo bg*/
+    background-size: contain;
+
 }
 
 .infografia--title > img{
@@ -16,6 +17,89 @@
 }
 
 .infografia {
-    text-align: center;
+  text-align: center;
+  position: relative;
+  min-height: 1170px;
 }
 
+.info, .img1, .img2, .img3, .img4{
+position: absolute;
+}
+
+.info{
+  left: 50%;
+  transform:translateX(-50%) ;
+
+}
+
+.img1{
+  top: 0;
+  right: 1%;
+  transform: scaleX(-1) rotate(-20deg) scale(0.9);
+
+}
+
+.img2{
+  left: 0;
+  transform: rotate(-5deg) scale(0.6) translateY(-19%);
+}
+
+.img3{
+  right: -5%;
+  bottom: 17%;
+  scale: 0.9;
+}
+
+.img4{
+  left: 1%;
+  bottom: 0;
+  transform: translateY(10%);
+}
+
+@media (max-width: 1225px){
+  .img1{
+    right: -15%;  
+  }
+  
+  .img2{
+    left: -21%;
+    transform: rotate(-5deg) scale(0.7) translateY(-19%);
+  }
+
+  .img3{
+    right: -10%;
+
+  }
+
+  .img4{
+    left:-25%
+  }
+}
+
+@media (max-width: 850px){
+  .img1{
+    right: -25%;  
+    transform: scaleX(-1) scale(0.7) rotate(-20deg);
+  }
+  .img2{
+    left: -25%;
+    transform: rotate(-5deg) scale(0.7) translateY(-19%);
+  }
+
+  .img3{
+    right: -15%;
+  }
+  
+  .img4{
+    left: -30%;
+  }
+}
+
+@media(max-width: 768px){
+  .img1,.img2,.img3,.img4{
+    display: none;
+  }
+  .infografia{
+    min-height: 0;
+  }
+}

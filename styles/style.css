@@ -73,6 +73,9 @@ header {
 
 footer {
   background-color: #d35b02;
+  background-image: url(../images/index/footerbg.png);
+  background-position: center;
+  background-repeat: round;
   padding-block: 5vh;
   color: white;
 }
