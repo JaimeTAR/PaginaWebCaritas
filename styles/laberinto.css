@@ -7,6 +7,10 @@ p {
   font-size: 1.25rem;
 }
 
+.abs {
+  position: absolute;
+}
+
 .lab__info {
   text-align: center;
 }
@@ -16,6 +20,7 @@ p {
 }
 
 .laberinth {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -41,4 +46,25 @@ p {
   max-width: 462px;
   aspect-ratio: 22/27;
   width: 50%;
+}
+
+.lupa {
+  left: -40px;
+  bottom: 30%;
+}
+
+.lapiz {
+  left: -2%;
+  top: 10%;
+}
+
+.heart {
+  right: -21%;
+  top: 25%;
+}
+
+.kidbtm {
+  scale: 1.2;
+  bottom: 0;
+  right: -40%;
 }
