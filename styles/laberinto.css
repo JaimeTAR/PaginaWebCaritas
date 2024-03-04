@@ -3,7 +3,6 @@
 p {
   color: var(--navbar-text-color);
   font-weight: 700;
-  letter-spacing: 0.01em;
   line-height: 1.5em;
   font-size: 1.25rem;
 }
@@ -25,28 +24,21 @@ p {
   position: relative;
 }
 
-.game::before {
-  content: url(../images/laberinto/pencil.png);
-  position: absolute;
-  top: 15%;
+.pergamino {
+  user-select: none;
 }
 
-.laberinth__game {
+.playable,
+.drawable {
   position: absolute;
-  top: 25%;
-  left: 60%;
-  transform: translate(-60%, -25%);
+  top: 5%;
+  left: 57%;
+  transform: translateX(-57%);
+  user-select: none;
+}
+
+.playable {
+  max-width: 462px;
+  aspect-ratio: 22/27;
   width: 50%;
-  height: 50%;
-  background-repeat: no-repeat;
-  background-image: url(../images/laberinto/placeholder.png);
-  background-size: contain;
-}
-
-.laberinth__game::before {
-  content: url(../images/laberinto/kids.png);
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -100%);
 }
