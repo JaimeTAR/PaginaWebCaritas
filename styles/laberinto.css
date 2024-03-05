@@ -1,5 +1,9 @@
 @import url(style.css);
 
+body {
+  overflow-x: hidden;
+}
+
 p {
   color: var(--navbar-text-color);
   font-weight: 700;
