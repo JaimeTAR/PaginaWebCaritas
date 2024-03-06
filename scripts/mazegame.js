@@ -12,12 +12,14 @@ var mouse = { x: 0, y: 0 };
 var last_mouse = { x: 0, y: 0 };
 
 function resizeCanvas() {
-  canvas.width = laberinth.width;
-  canvas.height = laberinth.height;
-  ctx.lineWidth = 3;
-  ctx.lineJoin = "round";
-  ctx.lineCap = "round";
-  ctx.strokeStyle = "green";
+  setTimeout(() => {
+    canvas.width = laberinth.width;
+    canvas.height = laberinth.height;
+    ctx.lineWidth = 3;
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "green";
+  }, 50);
 }
 
 /* Mouse Capturing Work */
@@ -63,3 +65,7 @@ var onPaint = function () {
   ctx.closePath();
   ctx.stroke();
 };
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  resizeCanvas();
+});
