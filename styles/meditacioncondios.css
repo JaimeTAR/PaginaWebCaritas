@@ -1,1 +1,412 @@
 @import url(style.css);
+
+body {
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.fondo{
+  background-image: url('../images/flormedi.png');
+  background-repeat:repeat-y;
+  background-size: cover;
+}
+
+.main{
+  margin: auto;
+}
+
+.titulo {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+.titulo > img{
+    width: 300px;
+}
+
+.flor{
+  display: flex;
+  justify-content: center;  
+  padding-top: 20px;
+}
+
+.flor > p{  
+  text-align: justify;
+  position:relative;
+  margin-left: 6%;
+  margin-bottom: auto;
+  font-size:x-large;
+}
+
+.flor > img{
+  width: 600px;
+  margin-right: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.personas{
+  display:grid;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  margin:auto;
+}
+
+.per1{
+  margin-left: 12%;
+}
+
+.per2{
+  margin-left: 12%;
+}
+
+.per3{
+  margin-left: 12%;
+}
+
+.p1{  
+  text-align: justify;
+  position:relative;
+  margin-left: 6%;
+  margin-top: 50px;
+  font-size:x-large;
+}
+
+.p2{  
+  text-align: justify;
+  position:relative;
+  margin-left: 6%;
+  margin-right: 3%;
+  margin-top: 50px;
+  font-size:x-large;
+}
+
+.manoytxt{
+  display: flex;
+  margin-left: 130px;
+}
+
+.texto{  
+  text-align: justify;
+  position:relative;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 20px;
+  font-size:x-large;
+}
+
+.per_bibl_txt{
+  display: flex;
+  justify-content: center;
+}
+
+.per4{
+  height: 300px;
+  width: 200px;
+  margin-left: 100px;
+}
+
+.texto2{
+  text-align: justify;
+  position:relative;
+  margin-left: 1%;
+  margin-right: 4%;
+  margin-top: 20px;
+  margin-bottom: auto;
+  font-size:x-large;
+}
+
+.texto3{
+  position: relative;
+  float:bottom left;
+  margin: auto;
+  text-align: left;
+}
+
+.biblia{
+  width: 325px;
+  margin-left: 10px;
+  float: right;
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+  .fondo{
+    .fondo{
+      background-image: url('../images/flormedi.png');
+      background-repeat:repeat-y;
+      background-size: cover;
+    }
+  }
+  
+  .main{
+    margin: auto;
+  }
+  
+  .titulo {
+      padding-top: 1rem;
+      text-align: center;
+    }
+  
+  .titulo > img{
+      width: 300px;
+  }
+  
+  .flor{
+    display: flex;
+    justify-content: center;  
+    padding-top: 20px;
+  }
+  
+  .flor > p{  
+    text-align: justify;
+    position:relative;
+    margin-left: 6%;
+    margin-bottom: auto;
+    font-size:x-large;
+  }
+  
+  .flor > img{
+    width: 600px;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .personas{
+    display:grid;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    margin:auto;
+  }
+  
+  .per1{
+    padding-top: 30px;
+    width: 20%;
+    margin-left: 12%;
+  }
+  
+  .per2{
+    padding-top: 30px;
+
+    width: 20%;
+    margin-left: 12%;
+  }
+  
+  .per3{
+    padding-top: 30px;
+    width: 20%;
+    margin-left: 12%;
+  }
+  
+  .letreros{
+    display:contents;
+    text-align: center;
+    position: relative;
+  }
+  
+  .p1{  
+    text-align: justify;
+    position:relative;
+    margin-left: 6%;
+    margin-top: 50px;
+    font-size:x-large;
+  }
+  
+  .p2{  
+    text-align: justify;
+    position:relative;
+    margin-left: 6%;
+    margin-right: 3%;
+    margin-top: 50px;
+    font-size:x-large;
+  }
+  
+  .manoytxt{
+    display: flex;
+    margin-left: 130px;
+  }
+
+  .mano{
+    width: 180px;
+    margin-left: -10%;
+  }
+  
+  .texto{  
+    text-align: justify;
+    position:relative;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 20px;
+    font-size:x-large;
+  }
+  
+  .per_bibl_txt{
+    display: block;
+    justify-content: center;
+  }
+  
+  .per4{
+    height: 300px;
+    width: 200px;
+    margin-left: 20%;
+  }
+  
+  .texto2{
+    text-align: justify;
+    position:relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    font-size:x-large;
+  }
+  
+  .texto3{
+    position: relative;
+    float:bottom left;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .biblia{
+    width: 325px;
+    margin-left: 1%;
+    margin-top: 5%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.fondo{
+    background-image: url('../images/flormedi.png');
+    background-repeat:repeat-y;
+    background-size: 150%;
+}
+
+.titulo {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+.titulo > img{
+    width: 300px;
+}
+
+.flor{
+  display: block; 
+  padding-top: 20px;
+}
+
+.flor > img{
+  width: 350px;
+  height: 220px;
+  padding-left: 130px;
+  padding-top: 20px;
+}
+
+.flor > p{  
+  text-align: justify;
+  margin-left: 6%;
+  margin-right: 4%;
+  font-size:larger;
+}
+
+.personas{
+  display:grid;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  margin:auto;
+}
+
+.per1{
+  width: 57%;
+  padding: 20px;
+  margin-left: 25%;
+}
+
+.per2{
+  width: 57%;
+  padding: 20px;
+  margin-left: 25%;
+}
+
+.per3{
+  width: 57%;
+  padding: 20px;
+  margin-left: 25%;
+}
+
+.p1{  
+  text-align: justify;
+  position:relative;
+  margin-left: 6%;
+  margin-top: 50px;
+  font-size:large;
+}
+
+.p2{  
+  margin-top: 100%;
+  font-size:large;
+}
+
+.per4{
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 110%;
+}
+
+.biblia{
+  width: 40%;
+  height: 50%;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-right: 30%;
+  margin-left: 10%;
+}
+
+.manoytxt{
+  display: block;
+}
+
+.texto{
+  margin-left: -27%;
+  margin-right: 5%;
+  margin-bottom: -130%;
+  font-size:large;
+}
+
+.mano{
+  width: 170px;
+  margin-left: 15%;
+}
+
+.texto2{
+  font-size:large;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 22%;
+}
+
+.per_bibl_txt{
+  display: block;
+  justify-content: center;
+}
+
+}
