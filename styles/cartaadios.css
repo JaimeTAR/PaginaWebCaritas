@@ -37,12 +37,12 @@ p {
 .P1 > p {
     text-align: justify;
     padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   }
   
 .P1 > img {
    padding-left: 2rem;
-   width: 280px;
+   width: 250px;
    float: right;
 }
 .P2 > p {
@@ -58,11 +58,16 @@ p {
 .P3 > p {
     text-align: justify;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
   }
   
 .P3 > img {
    padding-left: 2rem;
    float: left;
+}
+.P4{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 5rem;
 }
 
