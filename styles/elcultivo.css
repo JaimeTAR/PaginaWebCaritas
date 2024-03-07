@@ -1,16 +1,86 @@
 @import url(style.css);
 
-.titulo1{
-    text-align: center;
+main {
+  background-image: url(../images//dondelapaz/dondelapazbg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 
-  }
+.ImagenCultivo{
+  max-width: 300px; 
+}
+.TituloCultivo{
+padding-block: 1rem;
+text-align: center;
+}
 p{
-    color: rgb(211,91,2);
-    background-color:rgba(red, green, rgba(0, 0, 255, 0), alpha);
-    margin: 0%;
-    font-size: 2rem;
-    font-weight: 800;  
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  width: 100%;
 }
-.Parrafo1{
-    
+
+.Parrafo1 > p {
+  text-align: justify;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
+
+.Parrafo1 > img {
+  padding-left: 2rem;
+  width: 280px;
+  float: right;
+}
+.cultivoUNO {
+  min-height: 380px;
+}
+/* Segundo parrafo */
+
+.ImagenPersona{
+  max-width: 1000px; 
+}
+
+.Parrafo2 > p {
+  text-align:justify;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+.Parrafo2 > img {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  width: 400px;
+  float: left;
+}
+.ImagenOracion{
+  max-width: 300px; 
+}   
+.TituloOracion{
+padding-top: 7rem;
+padding-bottom: 1rem;
+text-align: center;
+}
+.Planta2{
+max-width: 200px; 
+}   
+.Planeta{
+max-width: 300px; 
+}   
+.Parrafo3 > p {
+text-align:justify;
+padding-top: 5rem;
+padding-bottom: 1rem;
+}
+.Parrafo3 > .Planta2 {
+padding-top: 2rem;
+padding-right: 2rem;
+width: 200px;
+float: left;
+}
+.Parrafo3 > .Planeta {
+padding-top: 2rem;
+padding-left: 2rem;
+width: 400px;
+float: right;
+} 
