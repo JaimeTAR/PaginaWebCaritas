@@ -1,2 +1,68 @@
 @import url(style.css);
 
+main {
+    background-image: url(../images//dondelapaz/dondelapazbg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+p {
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+/* Tamaño y formato de imagenes */
+.titulocartaimg{
+    max-width: 300px;
+}
+.velaimg{
+    max-width: 250px;
+}
+.numero1img{
+    max-width:300px;
+}
+.numero2img{
+    max-width:300px;
+}
+
+/*Titulo*/
+.titulocarta{
+    padding-block: 1rem;
+    text-align: center;
+}
+/*Parrafos*/
+.P1 > p {
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  
+.P1 > img {
+   padding-left: 2rem;
+   width: 280px;
+   float: right;
+}
+.P2 > p {
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+.P2 > img {
+   padding-left: 2rem;
+   float: left;
+}
+.P3 > p {
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+.P3 > img {
+   padding-left: 2rem;
+   float: left;
+}
+
