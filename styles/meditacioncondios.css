@@ -14,10 +14,6 @@ body {
   background-size: cover;
 }
 
-.main{
-  margin: auto;
-}
-
 .titulo {
     padding-top: 1rem;
     text-align: center;
@@ -37,12 +33,12 @@ body {
   text-align: justify;
   position:relative;
   margin-left: 6%;
-  margin-bottom: auto;
+  margin-bottom: 3%;
   font-size:x-large;
 }
 
 .flor > img{
-  width: 600px;
+  max-width: 600px;
   margin-right: 10px;
   margin-left: 30px;
   margin-bottom: 10px;
@@ -70,7 +66,6 @@ body {
 
 .p1{  
   text-align: justify;
-  position:relative;
   margin-left: 6%;
   margin-top: 50px;
   font-size:x-large;
@@ -80,7 +75,6 @@ body {
   text-align: justify;
   position:relative;
   margin-left: 6%;
-  margin-right: 3%;
   margin-top: 50px;
   font-size:x-large;
 }
@@ -93,8 +87,7 @@ body {
 .texto{  
   text-align: justify;
   position:relative;
-  margin-left: 3%;
-  margin-right: 2%;
+  margin-left: 3%;  
   margin-top: 20px;
   font-size:x-large;
 }
@@ -105,31 +98,25 @@ body {
 }
 
 .per4{
-  height: 300px;
-  width: 200px;
-  margin-left: 100px;
+  height: 350px;
+  width: 300px;
+  margin-left: 10%;
 }
 
 .texto2{
   text-align: justify;
   position:relative;
-  margin-left: 1%;
+  margin-left: 9%;
   margin-right: 4%;
   margin-top: 20px;
   margin-bottom: auto;
   font-size:x-large;
 }
 
-.texto3{
-  position: relative;
-  float:bottom left;
-  margin: auto;
-  text-align: left;
-}
-
 .biblia{
   width: 325px;
   margin-left: 10px;
+  margin-right: 4%;
   float: right;
 }
 
@@ -173,7 +160,7 @@ body {
   .flor > img{
     width: 600px;
     margin-right: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-bottom: 10px;
   }
   
@@ -278,7 +265,7 @@ body {
     width: 325px;
     margin-left: 1%;
     margin-top: 5%;
-    margin-right: 20%;
+    margin-right: 10%;
   }
 }
 
@@ -312,9 +299,8 @@ body {
 }
 
 .flor > img{
-  width: 350px;
-  height: 220px;
-  padding-left: 130px;
+  max-width: 300px;
+  padding-left: 24%;
   padding-top: 20px;
 }
 
@@ -366,10 +352,10 @@ body {
 
 .per4{
   position: absolute;
-  height: 40%;
-  width: 40%;
+  height: 25%;
+  width: 25%;
   margin-left: 30%;
-  margin-top: 110%;
+  margin-top: 100%;
 }
 
 .biblia{
