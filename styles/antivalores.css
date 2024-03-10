@@ -1,1 +1,47 @@
 @import url(style.css);
+
+.antivalores--firstcontainer {
+    background-image: url(../images/infografia/infografiabg.png);
+    background-size: 100cap;
+}
+
+.antivalores--title>img{
+    width: 300px;
+    padding-bottom: 2%;
+}
+
+.antivalores--title {
+    text-align: center;
+    position: relative;
+  }
+
+.foquitos{
+    position:absolute;
+    left: 70%;
+    scale:0.8;
+    transform: translateY(-38%);
+}
+
+.frase {
+    color: #d35b02;
+    font-size: 150%;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+
+  }
+@media (max-width: 1256px){
+    .foquitos{
+    transform: translateY(-37%);
+ 
+    }
+@media (max-width: 900px){
+    .foquitos{
+
+    }
+}
+}

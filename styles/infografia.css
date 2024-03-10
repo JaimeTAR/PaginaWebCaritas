@@ -3,7 +3,6 @@
 .infografia--first {
     background-image: url(../images/infografia/infografiabg.png); /*Colocar respectivo bg*/
     background-size: contain;
-
 }
 
 .infografia--title > img{
