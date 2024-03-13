@@ -1,1 +1,9 @@
 @import url(style.css);
+
+body {
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+}
