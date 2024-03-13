@@ -1,26 +1,124 @@
 @import url(style.css);
 
 body {
-    color: #d35b02;
-    font-weight: 700;
-    line-height: 1.5rem;
-    height: 100%;
-    width: 100%;
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  width: 100%;
 }
 
-.fondo{
-  background-image: url('../images/flormedi.png');
-  background-repeat:repeat-y;
+.fondo {
+  background-image: url("../images/flormedi.png");
+  background-repeat: repeat-y;
   background-size: cover;
 }
 
 .titulo {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.titulo > img {
+  width: 300px;
+}
+
+.flor {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  gap: 40px;
+}
+
+.flor > p {
+  text-align: justify;
+  margin-bottom: 3%;
+  font-size: x-large;
+}
+
+.flor > img {
+  max-width: 600px;
+}
+
+.personas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.p1 {
+  text-align: justify;
+  margin-top: 50px;
+  font-size: x-large;
+}
+
+.p2 {
+  text-align: justify;
+  margin-top: 50px;
+  font-size: x-large;
+}
+
+.manoytxt {
+  display: flex;
+  gap: 50px;
+}
+
+.texto {
+  text-align: justify;
+  position: relative;
+  margin-top: 20px;
+  font-size: x-large;
+}
+
+.per_bibl_txt {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.per4 {
+  height: 350px;
+  width: 300px;
+}
+
+.texto2 {
+  text-align: justify;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: auto;
+  font-size: x-large;
+}
+
+.biblia {
+  width: 325px;
+  float: right;
+  margin-left: 40px;
+}
+
+.medi_third {
+  margin-bottom: 3%;
+}
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  .fondo {
+    .fondo {
+      background-image: url("../images/flormedi.png");
+      background-repeat: repeat-y;
+      background-size: cover;
+    }
+  }
+
+  .main {
+    margin: auto;
+  }
+
+  .titulo {
     padding-top: 1rem;
     text-align: center;
   }
 
-.titulo > img{
+  .titulo > img {
     width: 300px;
+<<<<<<< HEAD
 }
 
 .flor{
@@ -128,140 +226,122 @@ body {
       background-repeat:repeat-y;
       background-size: cover;
     }
+=======
+>>>>>>> 2be9ca4ffabae2b0e3978cd3254bf6c1c21c6c02
   }
-  
-  .main{
-    margin: auto;
-  }
-  
-  .titulo {
-      padding-top: 1rem;
-      text-align: center;
-    }
-  
-  .titulo > img{
-      width: 300px;
-  }
-  
-  .flor{
+
+  .flor {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     padding-top: 20px;
   }
-  
-  .flor > p{  
+
+  .flor > p {
     text-align: justify;
-    position:relative;
+    position: relative;
     margin-left: 6%;
     margin-bottom: auto;
-    font-size:x-large;
+    font-size: x-large;
   }
-  
-  .flor > img{
+
+  .flor > img {
     width: 600px;
     margin-right: 10px;
     margin-left: 20px;
     margin-bottom: 10px;
   }
-  
-  .personas{
-    display:grid;
+
+  .personas {
+    display: grid;
     text-align: center;
     margin-top: 10px;
     position: relative;
-    margin:auto;
+    margin: auto;
   }
-  
-  .per1{
-    padding-top: 30px;
-    width: 20%;
-    margin-left: 12%;
-  }
-  
-  .per2{
-    padding-top: 30px;
 
-    width: 20%;
-    margin-left: 12%;
-  }
-  
-  .per3{
+  .per1 {
     padding-top: 30px;
-    width: 20%;
-    margin-left: 12%;
   }
-  
-  .letreros{
-    display:contents;
+
+  .per2 {
+    padding-top: 30px;
+  }
+
+  .per3 {
+    padding-top: 30px;
+  }
+
+  .letreros {
+    display: contents;
     text-align: center;
     position: relative;
   }
-  
-  .p1{  
+
+  .p1 {
     text-align: justify;
-    position:relative;
+    position: relative;
     margin-left: 6%;
     margin-top: 50px;
-    font-size:x-large;
+    font-size: x-large;
   }
-  
-  .p2{  
+
+  .p2 {
     text-align: justify;
-    position:relative;
+    position: relative;
     margin-left: 6%;
     margin-right: 3%;
     margin-top: 50px;
-    font-size:x-large;
+    font-size: x-large;
   }
-  
-  .manoytxt{
+
+  .manoytxt {
     display: flex;
     margin-left: 130px;
   }
 
-  .mano{
+  .mano {
     width: 180px;
     margin-left: -10%;
   }
-  
-  .texto{  
+
+  .texto {
     text-align: justify;
-    position:relative;
+    position: relative;
     margin-left: 3%;
     margin-right: 2%;
     margin-top: 20px;
-    font-size:x-large;
+    font-size: x-large;
   }
-  
-  .per_bibl_txt{
+
+  .per_bibl_txt {
     display: block;
     justify-content: center;
   }
-  
-  .per4{
+
+  .per4 {
     height: 300px;
     width: 200px;
     margin-left: 20%;
   }
-  
-  .texto2{
+
+  .texto2 {
     text-align: justify;
-    position:relative;
+    position: relative;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 1%;
     margin-bottom: auto;
-    font-size:x-large;
+    font-size: x-large;
   }
-  
-  .texto3{
+
+  .texto3 {
     position: relative;
-    float:bottom left;
+    float: bottom left;
     margin: auto;
     text-align: left;
   }
-  
-  .biblia{
+
+  .biblia {
     width: 325px;
     margin-left: 1%;
     margin-top: 5%;
@@ -276,123 +356,123 @@ body {
     line-height: 1.5rem;
     height: 100%;
     width: 100%;
-}
+  }
 
-.fondo{
-    background-image: url('../images/flormedi.png');
-    background-repeat:repeat-y;
+  .fondo {
+    background-image: url("../images/flormedi.png");
+    background-repeat: repeat-y;
     background-size: 150%;
-}
+  }
 
-.titulo {
+  .titulo {
     padding-top: 1rem;
     text-align: center;
   }
 
-.titulo > img{
+  .titulo > img {
     width: 300px;
-}
+  }
 
-.flor{
-  display: block; 
-  padding-top: 20px;
-}
+  .flor {
+    display: block;
+    padding-top: 20px;
+  }
 
-.flor > img{
-  max-width: 300px;
-  padding-left: 24%;
-  padding-top: 20px;
-}
+  .flor > img {
+    max-width: 300px;
+    padding-left: 24%;
+    padding-top: 20px;
+  }
 
-.flor > p{  
-  text-align: justify;
-  margin-left: 6%;
-  margin-right: 4%;
-  font-size:larger;
-}
+  .flor > p {
+    text-align: justify;
+    margin-left: 6%;
+    margin-right: 4%;
+    font-size: larger;
+  }
 
-.personas{
-  display:grid;
-  text-align: center;
-  margin-top: 20px;
-  position: relative;
-  margin:auto;
-}
+  .personas {
+    display: grid;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    margin: auto;
+  }
 
-.per1{
-  width: 57%;
-  padding: 20px;
-  margin-left: 25%;
-}
+  .per1 {
+    width: 57%;
+    padding: 20px;
+    margin-left: 25%;
+  }
 
-.per2{
-  width: 57%;
-  padding: 20px;
-  margin-left: 25%;
-}
+  .per2 {
+    width: 57%;
+    padding: 20px;
+    margin-left: 25%;
+  }
 
-.per3{
-  width: 57%;
-  padding: 20px;
-  margin-left: 25%;
-}
+  .per3 {
+    width: 57%;
+    padding: 20px;
+    margin-left: 25%;
+  }
 
-.p1{  
-  text-align: justify;
-  position:relative;
-  margin-left: 6%;
-  margin-top: 50px;
-  font-size:large;
-}
+  .p1 {
+    text-align: justify;
+    position: relative;
+    margin-left: 6%;
+    margin-top: 50px;
+    font-size: large;
+  }
 
-.p2{  
-  margin-top: 100%;
-  font-size:large;
-}
+  .p2 {
+    margin-top: 100%;
+    font-size: large;
+  }
 
-.per4{
-  position: absolute;
-  height: 25%;
-  width: 25%;
-  margin-left: 30%;
-  margin-top: 100%;
-}
+  .per4 {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    margin-left: 30%;
+    margin-top: 100%;
+  }
 
-.biblia{
-  width: 40%;
-  height: 50%;
-  text-align: center;
-  margin-bottom: 10%;
-  margin-right: 30%;
-  margin-left: 10%;
-}
+  .biblia {
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-right: 30%;
+    margin-left: 10%;
+  }
 
-.manoytxt{
-  display: block;
-}
+  .manoytxt {
+    display: block;
+    text-align: center;
+  }
 
-.texto{
-  margin-left: -27%;
-  margin-right: 5%;
-  margin-bottom: -130%;
-  font-size:large;
-}
+  .texto {
+    margin-left: -27%;
+    margin-right: 5%;
+    margin-bottom: -130%;
+    font-size: large;
+  }
 
-.mano{
-  width: 170px;
-  margin-left: 15%;
-}
+  .mano {
+    width: 170px;
+    margin-left: 0;
+  }
 
-.texto2{
-  font-size:large;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 22%;
-}
+  .texto2 {
+    font-size: large;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 22%;
+  }
 
-.per_bibl_txt{
-  display: block;
-  justify-content: center;
-}
-
+  .per_bibl_txt {
+    display: block;
+    justify-content: center;
+  }
 }
