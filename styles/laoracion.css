@@ -7,3 +7,83 @@ body {
     height: 100%;
     width: 100%;
 }
+
+.fondo{
+    background-image: url(../images/reyoreina/reyoreinabg.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+  
+
+.titulo, .subtitulo {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+.titulo > img{
+    width: 300px;
+}
+
+.vela {
+    display: block;
+    padding-top: 20px;
+    gap: 40px;
+  }
+
+  .txt1{
+    padding-left: 10%;
+    text-align: justify;
+}
+
+.vela > img{
+    float: right;
+    margin-right: -5%;
+    margin-top: -2.5%;
+    padding-left: 6%;
+    width: 23%;
+}
+
+.txt1, .txt2{
+    font-size: 19px;
+}
+
+.txt2{
+    display: flex;
+    margin-right: -6%;
+    margin-top: -3%;
+}
+
+.paloma {
+    display: flex;
+    padding-top: 20px;
+    gap: 40px;
+}
+
+.paloma{
+    margin-left: 10%;
+}
+
+.subtitulo{
+    padding-top: 3%;
+}
+
+.txt3{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 2%;
+    font-size: 19px;
+}
+
+.manos{
+    float:right;
+    width: 25%;
+    margin-right: -5%;
+    margin-top: -53%;
+}
+
+.niño > img{
+    max-width: 30%;
+    margin-left: -5%;
+    margin-top: -55%;
+}

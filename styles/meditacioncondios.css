@@ -98,6 +98,7 @@ body {
 .medi_third {
   margin-bottom: 3%;
 }
+
 @media screen and (min-width: 501px) and (max-width: 900px) {
   .fondo {
     .fondo {
@@ -118,7 +119,6 @@ body {
 
   .titulo > img {
     width: 300px;
-<<<<<<< HEAD
 }
 
 .flor{
@@ -218,6 +218,7 @@ body {
   float: right;
 }
 
+}
 
 @media screen and (min-width: 501px) and (max-width: 900px){
   .fondo{
@@ -226,8 +227,6 @@ body {
       background-repeat:repeat-y;
       background-size: cover;
     }
-=======
->>>>>>> 2be9ca4ffabae2b0e3978cd3254bf6c1c21c6c02
   }
 
   .flor {
@@ -476,3 +475,4 @@ body {
     justify-content: center;
   }
 }
+
