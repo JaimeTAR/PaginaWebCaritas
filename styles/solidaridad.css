@@ -1,1 +1,50 @@
 @import url(style.css);
+
+body {
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.fondo{
+    background-repeat: repeat;
+    background-position: bottom;
+}
+
+.titulo{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.pincel{
+    float: right;
+    width: 18%;
+    margin-top: -18%;
+    margin-right: 17%;
+}
+
+.texto{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: large;
+}
+
+.cuaderno{
+    max-width: 60%;
+    padding-top: 2rem;
+    margin-left: 10%;
+}
+
+.lapicero{
+    float: right;
+    max-width: 22%;
+}
+
+.arcoiris{
+    float:right;
+    max-width: 25%;
+    margin-top: -20%;
+    margin-right: -10.3%;
+}
