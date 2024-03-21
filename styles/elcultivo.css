@@ -20,6 +20,7 @@ p{
   line-height: 1.5rem;
   height: 100%;
   width: 100%;
+  font-size: 1.125rem;
 }
 
 .Parrafo1 > p {
@@ -62,25 +63,20 @@ padding-bottom: 1rem;
 text-align: center;
 }
 .Planta2{
-max-width: 200px; 
+max-width: 200px;
+
 }   
 .Planeta{
 max-width: 300px; 
 }   
 .Parrafo3 > p {
-text-align:justify;
-padding-top: 5rem;
-padding-bottom: 1rem;
+margin-left: 20px;
 }
 .Parrafo3 > .Planta2 {
-padding-top: 2rem;
 padding-right: 2rem;
-width: 200px;
 float: left;
 }
 .Parrafo3 > .Planeta {
-padding-top: 2rem;
-padding-left: 2rem;
-width: 400px;
+padding-top: 1rem;
 float: right;
 } 

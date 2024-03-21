@@ -12,6 +12,7 @@ p {
   line-height: 1.5rem;
   height: 100%;
   width: 100%;
+  font-size: 1.25rem;
 }
 
 /* Tamaño y formato de imagenes */
@@ -23,9 +24,11 @@ p {
 }
 .numero1img{
     max-width:300px;
+    margin-right: 30px;
 }
 .numero2img{
     max-width:300px;
+    margin-right: 30px;
 }
 
 /*Titulo*/
@@ -68,7 +71,7 @@ p {
 .P4{
     text-align: justify;
     padding-top: 10px;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
 }
 /*seccion 2*/
 .lupa{
@@ -84,4 +87,16 @@ p {
   display: inline-block;
   list-style: none;
   margin: 30px;
+}
+/*seccion 3*/
+.P33 > p {
+  text-align: justify;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.P33 > img {
+  padding-left: 2rem;
+  max-width: 300px;
+  float: right;
+  margin: 50px;
 }
