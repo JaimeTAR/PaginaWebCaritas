@@ -218,7 +218,6 @@ p {
 
 .selected--dropdown {
   background-color: var(--navbar-separator-color);
-  border-radius: 100px;
 }
 
 .separator {

@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", (e) => {
+  let eraser = document.querySelector(".eraser");
+
+  eraser.addEventListener("click", (e) => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  });
+
   resizeCanvas();
 
   var canvas = document.querySelector(".drawable");

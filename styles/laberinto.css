@@ -76,6 +76,13 @@ p {
   right: -40%;
 }
 
+.eraser {
+  transform: rotate(15deg);
+  scale: 0.9;
+  bottom: 25%;
+  right: 10%;
+}
+
 @media (max-width: 900px) {
   .lupa {
     scale: 0.75;
