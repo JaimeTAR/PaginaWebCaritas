@@ -98,13 +98,16 @@ body {
 .medi_third {
   margin-bottom: 3%;
 }
+
+.MusiFondo{
+  margin-left: 39%;
+}
+
 @media screen and (min-width: 501px) and (max-width: 900px) {
-  .fondo {
-    .fondo {
+  .fondo { 
       background-image: url("../images/flormedi.png");
       background-repeat: repeat-y;
       background-size: cover;
-    }
   }
 
   .main {
@@ -118,6 +121,114 @@ body {
 
   .titulo > img {
     width: 300px;
+}
+
+.flor{
+  display: flex;
+  justify-content: center;  
+  padding-top: 20px;
+}
+
+.flor > p{  
+  text-align: justify;
+  position:relative;
+  margin-left: 6%;
+  margin-bottom: 3%;
+  font-size:x-large;
+}
+
+.flor > img{
+  max-width: 600px;
+  margin-right: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.personas{
+  display:grid;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  margin:auto;
+}
+
+.per1{
+  margin-left: 10%;
+}
+
+.per2{
+  margin-left: 10%;
+}
+
+.per3{
+  margin-left: 10%;
+}
+
+.p1{  
+  text-align: justify;
+  margin-left: 6%;
+  margin-top: 50px;
+  font-size:x-large;
+}
+
+.p2{  
+  text-align: justify;
+  position:relative;
+  margin-left: 6%;
+  margin-top: 50px;
+  font-size:x-large;
+}
+
+.manoytxt{
+  display: flex;
+  margin-left: 130px;
+}
+
+.texto{  
+  text-align: justify;
+  position:relative;
+  margin-left: 3%;  
+  margin-top: 20px;
+  font-size:x-large;
+}
+
+.per_bibl_txt{
+  display: flex;
+  justify-content: center;
+}
+
+.per4{
+  height: 350px;
+  width: 300px;
+  margin-left: 10%;
+}
+
+.texto2{
+  text-align: justify;
+  position:relative;
+  margin-left: 9%;
+  margin-right: 4%;
+  margin-top: 20px;
+  margin-bottom: auto;
+  font-size:x-large;
+}
+
+.biblia{
+  width: 325px;
+  margin-left: 10px;
+  margin-right: 4%;
+  float: right;
+}
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+  .fondo{
+    .fondo{
+      background-image: url('../images/flormedi.png');
+      background-repeat:repeat-y;
+      background-size: cover;
+    }
   }
 
   .flor {
@@ -237,6 +348,12 @@ body {
     margin-top: 5%;
     margin-right: 10%;
   }
+
+.MusiFondo{
+  padding-top: 5%;
+  padding-right: 5%;
+}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -270,7 +387,7 @@ body {
 
   .flor > img {
     max-width: 300px;
-    padding-left: 24%;
+    padding-left: 30%;
     padding-top: 20px;
   }
 
@@ -316,7 +433,7 @@ body {
   }
 
   .p2 {
-    margin-top: 100%;
+    margin-top: 150%;
     font-size: large;
   }
 
@@ -325,7 +442,7 @@ body {
     height: 25%;
     width: 25%;
     margin-left: 30%;
-    margin-top: 100%;
+    margin-top: 105%;
   }
 
   .biblia {
@@ -343,7 +460,7 @@ body {
   }
 
   .texto {
-    margin-left: -27%;
+    margin-left: 5%;
     margin-right: 5%;
     margin-bottom: -130%;
     font-size: large;
@@ -356,7 +473,7 @@ body {
 
   .texto2 {
     font-size: large;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%;
     margin-top: 22%;
   }
@@ -365,4 +482,10 @@ body {
     display: block;
     justify-content: center;
   }
+
+  .MusiFondo{
+    margin-left: 20%;
+  }
+
 }
+
