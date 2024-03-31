@@ -1,1 +1,45 @@
 @import url(style.css);
+p {
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+main {
+    background-image: url(../images//dondelapaz/dondelapazbg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.centro{
+    text-align: center;
+}
+.imagenes1{
+    text-align: center;
+}
+.imagenes1 > li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+}
+.mano1{
+    max-width: 400px
+}
+.titulo{
+    max-width: 400px;
+    padding-left: 100px;
+}
+.mano2{
+    max-width: 400px;
+    padding-left: 100px;
+}
+.imagenes2{
+    text-align: center;
+}
+.imagenes2 > li{
+    display: inline-block;
+    list-style: none;
+    margin: 50px;
+}
