@@ -1,1 +1,32 @@
 @import url(style.css);
+
+.first-sect {
+  text-align: center;
+}
+
+.first-sect > img {
+  width: 300px;
+  padding-bottom: 25px;
+}
+
+.texto > img {
+  float: right;
+  transform: translateY(-120px);
+}
+
+.texto {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #d35b02;
+  text-align: left;
+}
+
+.texto > div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.texto > div > p {
+  width: 95%;
+}
