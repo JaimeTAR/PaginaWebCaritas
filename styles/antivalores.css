@@ -33,15 +33,112 @@
     padding-right: 10%;
     text-align: center;
 
+}
+.column {
+    float: right;
+    width: 70%;
+    padding-top: 3%;
+    text-align: center;
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tabla {
+    padding: 10%;
+}
+
+.titlepos{
+   padding: 2%;
+}
+
+.pasoH {
+    position: relative;
+    padding-left: 100px;
+    padding-block: 10px;
+    min-height: 80px;
+    max-width: 90%;
+    text-align: left;   
   }
+  
+  .pasoH::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    background-size: cover;
+    height: 85px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .pasoH:nth-of-type(1)::before {
+    top: 20%;
+    background-image: url(../images/antivalores/uno.svg);
+  }
+  .pasoH:nth-of-type(2)::before {
+    top:35%;
+    background-image: url(../images/antivalores/tres.svg);
+  }
+  .pasoH:nth-of-type(3)::before {
+    top: 45%;
+    background-image: url(../images/antivalores/cinco.svg);
+  }
+  .pasoH:nth-of-type(4)::before {
+    top: 60%;
+    background-image: url(../images/antivalores/siete.svg);
+  }
+  .pasoH:nth-of-type(5)::before {
+    background-image: url(../images/antivalores/dos.svg);
+  }
+
+  .pasoV {
+    position: relative;
+    padding-left: 100px;
+    padding-block: 10px;
+    min-height: 80px;
+    max-width: 90%;
+    text-align: left;
+  }
+  
+  .pasoV::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    background-size: cover;
+    height: 85px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .pasoV:nth-of-type(1)::before {
+    top: 20%;
+    background-image: url(../images/antivalores/dos.svg);
+  }
+  .pasoV:nth-of-type(2)::before {
+    top:35%;
+    background-image: url(../images/antivalores/cuatro.svg);
+  }
+  .pasoV:nth-of-type(3)::before {
+    top: 45%;
+    background-image: url(../images/antivalores/seis.svg);
+  }
+
 @media (max-width: 1256px){
     .foquitos{
     transform: translateY(-37%);
  
     }
 @media (max-width: 900px){
-    .foquitos{
-
-    }
+    .foquitos{}
 }
 }
