@@ -55,6 +55,7 @@ p {
   }
   
 .P2 > img {
+   margin: 2px;
    padding-left: 2rem;
    float: left;
 }
@@ -75,18 +76,19 @@ p {
 }
 /*seccion 2*/
 .lupa{
-  max-width: 400px;
+  max-width: 300px;
 }
 .corona{
-  max-width: 400px;
+  max-width: 300px;
 }
 .arbol{
-  max-width: 400px;
+  max-width: 300px;
 }
 .imagenes > li{
   display: inline-block;
   list-style: none;
   margin: 30px;
+
 }
 /*seccion 3*/
 .P33 > p {
@@ -95,7 +97,6 @@ p {
   padding-bottom: 1rem;
 }
 .P33 > img {
-  padding-left: 2rem;
   max-width: 300px;
   float: right;
   margin: 50px;
