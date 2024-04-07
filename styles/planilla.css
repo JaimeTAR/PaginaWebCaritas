@@ -1,1 +1,49 @@
 @import url(style.css);
+
+
+main {
+    background-image: url("../images/planilla/bg.png");
+    background-position: top;
+    background-size: 80%;
+}
+
+.div__Titulo {
+    text-align: center;
+}
+
+.imagenes {
+    text-align: center;
+    width: 100%;
+}
+
+.planilla {
+    width: 66%;
+    transform: translate(-20%, -0%);
+}
+
+.iconos {
+    width: 25%;
+    transform: translate(-40%, -0%);
+}
+
+@media (max-width: 900px) {
+    main {
+        background-position: top;
+        background-repeat: repeat-y;
+        background-size: 100%;
+    }
+    .div__titulo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .planilla {
+        width: 70%;
+        transform: translate(10%, -0%);
+    }
+    
+    .iconos {
+        width: 25%;
+        transform: translate(-50%, 10%);
+    }
+}
