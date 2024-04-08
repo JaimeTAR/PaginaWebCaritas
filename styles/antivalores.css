@@ -47,8 +47,19 @@
     clear: both;
 }
 
+.contenedor{
+  position: relative;
+}
+
 .tabla {
-    padding: 3%;
+  padding: 3%;
+}
+
+.juego{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .titlepos{
