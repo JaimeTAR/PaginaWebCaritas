@@ -48,7 +48,7 @@
 }
 
 .tabla {
-    padding: 10%;
+    padding: 3%;
 }
 
 .titlepos{
@@ -159,24 +159,25 @@
     display: none;
   }
   .titlepos{
-    padding-bottom: 8%;
+    padding-bottom: 7%;
   }
   .row{
     display: block;
   }
-  .tabla{
-    margin-left: -25%;
-  }
   .column{
     all:unset;
-    float:right;
     text-align: center;
     padding-left: 5%;
   }
+  .tabla{ 
+    width: 90%;
+  }
   .pasoH{
+    margin-left: 5%;
     font-size: 150%;
   }
   .pasoV{
+    margin-left: 5%;
     font-size: 150%;
   }
 }
