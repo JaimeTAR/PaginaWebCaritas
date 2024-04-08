@@ -34,7 +34,7 @@ const logoDiv = document.createElement("div");
 logoDiv.className = "logo";
 
 const logoLink = document.createElement("a");
-logoLink.href = currentPage === "index" ? "#" : "index.html";
+logoLink.href = currentPage === "index" ? "#" : "../index.html";
 
 const logoImg = document.createElement("img");
 logoImg.src = "../images/logoheader.svg";
@@ -62,7 +62,7 @@ const ul = document.createElement("ul");
 ul.className = "navbar__list";
 
 const menuItems = [
-  { text: "Inicio", href: currentPage === "index" ? "#" : "index.html" },
+  { text: "Inicio", href: currentPage === "index" ? "#" : "../index.html" },
   {
     text: "Juegos interactivos",
     href: "#",
@@ -70,11 +70,11 @@ const menuItems = [
   },
   {
     text: "Don de la paz",
-    href: currentPage === "dondelapaz" ? "#" : "dondelapaz.html",
+    href: currentPage === "dondelapaz" ? "#" : "/pages/dondelapaz.html",
   },
   {
     text: "El árbol",
-    href: currentPage === "elarbol" ? "#" : "elarbol.html",
+    href: currentPage === "elarbol" ? "#" : "/pages/elarbol.html",
   },
   { text: "La oración y el cultivo", href: "#", dropdown: true },
   { text: "Materiales", href: "#", dropdown: true },
@@ -86,79 +86,79 @@ const dropdownItemsList = [
   [
     {
       text: "Sopa de la caridad",
-      href: currentPage === "sopadeletras" ? "#" : "sopadeletras.html",
+      href: currentPage === "sopadeletras" ? "#" : "/pages/sopadeletras.html",
     },
     {
       text: "Rey y reina",
-      href: currentPage === "reyoreina" ? "#" : "reyoreina.html",
+      href: currentPage === "reyoreina" ? "#" : "/pages/reyoreina.html",
     },
     {
       text: "Laberinto de la solidaridad",
-      href: currentPage === "laberinto" ? "#" : "laberinto.html",
+      href: currentPage === "laberinto" ? "#" : "/pages/laberinto.html",
     },
     {
       text: "Termómetro familiar",
-      href: currentPage === "termometro" ? "#" : "termometro.html",
+      href: currentPage === "termometro" ? "#" : "/pages/termometro.html",
     },
     {
       text: "Anti-valores",
-      href: currentPage === "antivalores" ? "#" : "antivalores.html",
+      href: currentPage === "antivalores" ? "#" : "/pages/antivalores.html",
     },
     {
       text: "Enlace de valor",
-      href: currentPage === "enlacedevalor" ? "#" : "enlacedevalor.html",
+      href: currentPage === "enlacedevalor" ? "#" : "/pages/enlacedevalor.html",
     },
     {
       text: "Círculos del valor",
-      href: currentPage === "circulosdelvalor" ? "#" : "circulosdelvalor.html",
+      href: currentPage === "circulosdelvalor" ? "#" : "/pages/circulosdelvalor.html",
     },
     {
       text: "Dibuja amor",
-      href: currentPage === "dibujaamor" ? "#" : "dibujaamor.html",
+      href: currentPage === "dibujaamor" ? "#" : "/pages/dibujaamor.html",
     },
     {
       text: "Solidaridad",
-      href: currentPage === "solidaridad" ? "#" : "solidaridad.html",
+      href: currentPage === "solidaridad" ? "#" : "/pages/solidaridad.html",
     },
     {
       text: "Acciones de cambio",
-      href: currentPage === "accionesdecambio" ? "#" : "accionesdecambio.html",
+      href: currentPage === "accionesdecambio" ? "#" : "/pages/accionesdecambio.html",
     },
   ],
   [
     {
       text: "Meditación con dios",
-      href: currentPage === "meditacioncondios" ? "#" : "meditacioncondios.html",
+      href: currentPage === "meditacioncondios" ? "#" : "/pages/meditacioncondios.html",
     },
     {
       text: "La oración",
-      href: currentPage === "laoracion" ? "#" : "laoracion.html",
+      href: currentPage === "laoracion" ? "#" : "/pages/laoracion.html",
     },
     {
       text: "Carta a dios",
-      href: currentPage === "cartaadios" ? "#" : "cartaadios.html",
+      href: currentPage === "cartaadios" ? "#" : "/pages/cartaadios.html",
     },
     {
       text: "El cultivo",
-      href: currentPage === "elcultivo" ? "#" : "elcultivo.html",
+      href: currentPage === "elcultivo" ? "#" : "/pages/elcultivo.html",
     },
   ],
   [
     {
       text: "Infografía",
-      href: currentPage === "infografia" ? "#" : "infografia.html",
+      href: currentPage === "infografia" ? "#" : "/pages/infografia.html",
     },
     {
       text: "Historieta",
-      href: currentPage === "historieta" ? "#" : "historieta.html",
+      href: currentPage === "historieta" ? "#" : "/pages/historieta.html",
     },
     {
       text: "Buzón y bote",
-      href: currentPage === "buzonybote" ? "#" : "buzonybote.html",
+      href: currentPage === "buzonybote" ? "#" : "/pages/buzonybote.html",
     },
     {
       text: "Planilla",
-      href: currentPage === "planilla" ? "#" : "planilla.html",
+      href: currentPage === "planilla" ? "#" : "/pages/planilla.html",
     },
   ],
 ];
