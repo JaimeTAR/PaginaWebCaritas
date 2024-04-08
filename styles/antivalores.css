@@ -129,16 +129,32 @@
     background-image: url(../images/antivalores/cuatro.svg);
   }
   .pasoV:nth-of-type(3)::before {
-    top: 45%;
-    background-image: url(../images/antivalores/seis.svg);
+  top: 45%;
+  background-image: url(../images/antivalores/seis.svg);
   }
 
 @media (max-width: 1256px){
-    .foquitos{
+  .foquitos{
     transform: translateY(-37%);
- 
-    }
+    left:65%
+
+  }
+
+@media (max-width: 980px){
+  .foquitos{
+    scale: 0.7;
+    transform: translateY(-43%);
+
+  }
+}
+
 @media (max-width: 900px){
-    .foquitos{}
+  .foquitos{
+    display: none;
+  }
+}
+
+@media (max-width: 525px) {
+  
 }
 }
