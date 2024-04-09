@@ -1,5 +1,9 @@
 @import url(style.css);
 
+body {
+  overflow-x: hidden;
+}
+
 .first-sect {
   text-align: center;
 }
@@ -10,11 +14,13 @@
 }
 
 .texto > img {
-  float: right;
-  transform: translateY(-120px);
+  position: absolute;
+  right: -80px;
+  top: -120px;
 }
 
 .texto {
+  position: relative;
   font-weight: 700;
   font-size: 1.125rem;
   color: #d35b02;
@@ -28,5 +34,25 @@
 }
 
 .texto > div > p {
-  width: 95%;
+  width: 90%;
 }
+
+.ejemplo-sect {
+}
+
+.ejemplo-title {
+  position: relative;
+  text-align: center;
+}
+
+.ejemplo-title > img {
+  width: 200px;
+}
+
+.ejemplo-title::before {
+  content: url(../images/termometro/termoejemplo.png);
+  position: absolute;
+  left: -20px;
+  top: -70px;
+}
+
