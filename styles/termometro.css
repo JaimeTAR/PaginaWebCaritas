@@ -88,8 +88,8 @@ p {
 }
 
 .termometro {
-  text-align: center;
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr;
   user-select: none;
 }
@@ -161,14 +161,79 @@ p {
   width: 22%;
 }
 
+@media (max-width: 1300px) {
+  .column-termometro {
+    gap: 1ch;
+  }
+
+  .termometro {
+    width: 100%;
+  }
+
+  .termometro > img {
+    width: 50%;
+  }
+
+  .input-box {
+    padding: 0.5ch;
+    width: 75%;
+  }
+}
+
 @media (max-width: 1200px) {
   .ejemplo-title::before {
     scale: 0.75;
   }
+
+  .texto > div > p {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1000px) {
+  .ejemplo-title::before {
+    content: "";
+  }
+
   .texto-ejemplo {
-    width: 65%;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .texto-ejemplo::before {
+    position: absolute;
+    content: url(../images/termometro/termoejemplo.png);
+    top: -180px;
+    scale: 0.5;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+  .termometros-container {
+    flex-wrap: wrap;
+  }
+
+  .column-termometro {
+    width: 50%;
+    margin-bottom: 5ch;
+  }
+}
+
+@media (max-width: 900px) {
+  .texto > img {
+    transform: translateX(50px);
+    scale: 0.75;
+  }
+
+  .termometros-container {
+    flex-wrap: wrap;
+  }
+
+  .column-termometro {
+    width: 100%;
+    margin-bottom: 5ch;
   }
 }
