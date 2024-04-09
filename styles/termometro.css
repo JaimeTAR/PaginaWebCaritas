@@ -2,6 +2,12 @@
 
 body {
   overflow-x: hidden;
+  background-image: url(../images/termometro/bg.png);
+  background-position: top;
+}
+
+p {
+  background-color: rgb(255, 242, 227, 0.8);
 }
 
 .first-sect {
@@ -72,34 +78,87 @@ body {
   justify-content: space-between;
 }
 
+.column-termometro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3ch;
+  width: 22%;
+  background-color: rgb(255, 242, 227);
+}
+
 .termometro {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  width: 22%;
   user-select: none;
+}
+
+.termometro > img {
+  width: 100%;
 }
 
 .termometro > * {
   grid-row-start: 1;
   grid-column-start: 1;
-  width: 100%;
-  height: 100%;
 }
 
 .canvas-termometro {
   z-index: 5;
 }
 
+.input-box {
+  padding: 1ch;
+  border-radius: 100px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-box-1 {
+  color: rgb(122, 46, 128);
+  border: 3px solid rgb(122, 46, 128);
+  background-color: rgba(222, 106, 153, 0.25);
+}
+
+.input-box-2 {
+  color: rgb(181, 27, 66);
+  border: 3px solid rgb(181, 27, 66);
+  background-color: rgba(235, 96, 115, 0.25);
+}
+
+.input-box-3 {
+  color: rgb(227, 96, 2);
+  border: 3px solid rgb(227, 96, 2);
+  background-color: rgba(255, 176, 5, 0.25);
+}
+
+.input-box-4 {
+  color: rgb(84, 41, 30);
+  border: 3px solid rgb(84, 41, 30);
+  background-color: rgba(222, 140, 78, 0.25);
+}
+
 .imagenes-bottom {
-  margin-block: 6ch;
+  margin-top: 6ch;
+  margin-bottom: 4ch;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  gap: 150px;
+}
+
+.imagenes-bottom > img {
+  scale: 1;
 }
 
 .imagenes-bottom > img:nth-child(1) {
-  width: 20%;
+  width: 25%;
+}
+
+.imagenes-bottom > img:nth-child(2) {
+  width: 22%;
 }
 
 @media (max-width: 1200px) {
