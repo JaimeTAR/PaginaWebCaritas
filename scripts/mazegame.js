@@ -26,8 +26,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   var last_mouse = { x: 0, y: 0 };
 
-  console.log(mouse);
-
   function resizeCanvas() {
     setTimeout(() => {
       canvas.width = laberinth.width;

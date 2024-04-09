@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cáritas Gdl</title>
-    <link rel="shortcut icon" href="../images/logoheader.svg" />
-    <link rel="stylesheet" href="../styles/termometro.css" />
-    <script script src="../scripts/navbar.js"></script>
-    <script script defer src="../scripts/termometro.js"></script>
-  </head>
-  <body>
-    <section class="first-sect container">
-      <img src="../images/termometro/titulo.png" alt="Termómetro familiar" />
 
-      <div class="texto">
-        <img class="first-sect-img" src="../images/termometro/termotexto.png" alt="Termómetro" />
-        <div>
-          <p>
-            Este es un termómetro familiar. Para llenarlo te invitamos a reflexionar acerca de, cuantos valores se viven
-            en tu familia.
-          </p>
-          <p>
-            Usa los 5 espacios para poner dentro a los valores más importantes que observas en tu familia. Trata de no
-            repetir valores. Por último pega este termómetro en un lugar visible dentro de tu hogar y coloréalo hasta
-            dónde sea necesario.
-          </p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cáritas Gdl</title>
+  <link rel="shortcut icon" href="../images/logoheader.svg" />
+  <link rel="stylesheet" href="../styles/termometro.css" />
+  <script script src="../scripts/navbar.js"></script>
+  <script script defer src="../scripts/termometro.js"></script>
+</head>
+
+<body>
+  <section class="first-sect container">
+    <img src="../images/termometro/titulo.png" alt="Termómetro familiar" />
+
+    <div class="texto">
+      <img class="first-sect-img" src="../images/termometro/termotexto.png" alt="Termómetro" />
+      <div>
+        <p>
+          Este es un termómetro familiar. Para llenarlo te invitamos a reflexionar acerca de, cuantos valores se viven
+          en tu familia.
+        </p>
+        <p>
+          Usa los 5 espacios para poner dentro a los valores más importantes que observas en tu familia. Trata de no
+          repetir valores. Por último pega este termómetro en un lugar visible dentro de tu hogar y coloréalo hasta
+          dónde sea necesario.
+        </p>
       </div>
-    </section>
-    <section class="ejemplo-sect container">
-      <div class="ejemplo-title">
-        <img src="../images/termometro/ejemplo.png" alt="Ejemplo" />
-        <p>Mi familia es muy caritativa; entonces voy a llenar mucho mi termómetro.</p>
+    </div>
+  </section>
+  <section class="ejemplo-sect container">
+    <div class="ejemplo-title">
+      <img src="../images/termometro/ejemplo.png" alt="Ejemplo" />
+      <p class="texto-ejemplo">Mi familia es muy caritativa; entonces voy a llenar mucho mi termómetro.</p>
+    </div>
+  </section>
+  <section class="container">
+    <div class="termometros-container">
+      <div class="termometro termometro-1">
+        <img draggable="false" src="../images/termometro/termo1.png" alt="Termómetro">
+        <canvas class="canvas-termometro canvas-1"></canvas>
       </div>
-    </section>
-  </body>
+      <div class="termometro termometro-2">
+        <img draggable="false" src="../images/termometro/termo2.png" alt="Termómetro">
+        <canvas class="canvas-termometro canvas-2"></canvas>
+      </div>
+      <div class="termometro termometro-3">
+        <img draggable="false" src="../images/termometro/termo3.png" alt="Termómetro">
+        <canvas class="canvas-termometro canvas-3"></canvas>
+      </div>
+      <div class="termometro termometro-4">
+        <img draggable="false" src="../images/termometro/termo4.png" alt="Termómetro">
+        <canvas class="canvas-termometro canvas-4"></canvas>
+      </div>
+    </div>
+    <div class="imagenes-bottom">
+      <img src="../images/termometro/kid.png" alt="">
+      <img src="../images/termometro/mano.png" alt="">
+    </div>
+  </section>
+</body>
+
 </html>
