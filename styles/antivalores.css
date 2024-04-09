@@ -39,11 +39,6 @@
     width: 70%;
     padding-top: 3%;
     text-align: center;
-    color: #d35b02;
-    font-weight: 700;
-    line-height: 1.5rem;
-    height: 100%;
-    width: 100%;
 }
 
 .row:after {
@@ -52,12 +47,24 @@
     clear: both;
 }
 
+.contenedor{
+  position: relative;
+}
+
 .tabla {
-    padding: 10%;
+  padding: 3%;
+}
+
+.juego{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .titlepos{
-   padding: 2%;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 .pasoH {
@@ -67,6 +74,11 @@
     min-height: 80px;
     max-width: 90%;
     text-align: left;   
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
   }
   
   .pasoH::before {
@@ -107,6 +119,11 @@
     min-height: 80px;
     max-width: 90%;
     text-align: left;
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
   }
   
   .pasoV::before {
@@ -152,9 +169,37 @@
   .foquitos{
     display: none;
   }
+  .titlepos{
+    padding-bottom: 7%;
+  }
+  .row{
+    display: block;
+  }
+  .column{
+    all:unset;
+    text-align: center;
+    padding-left: 5%;
+  }
+  .tabla{ 
+    width: 90%;
+  }
+  .pasoH{
+    margin-left: 5%;
+    font-size: 150%;
+  }
+  .pasoV{
+    margin-left: 5%;
+    font-size: 150%;
+  }
 }
 
+
 @media (max-width: 525px) {
-  
+  .pasoH{
+    font-size: 100%;
+  }
+  .pasoV{
+    font-size: 100%;
+  }
 }
 }
