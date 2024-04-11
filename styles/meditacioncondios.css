@@ -1,5 +1,10 @@
 @import url(style.css);
-
+main {
+  background-image: url(../images//dondelapaz/dondelapazbg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 body {
   color: #d35b02;
   font-weight: 700;
@@ -8,11 +13,6 @@ body {
   width: 100%;
 }
 
-.fondo {
-  background-image: url("../images/flormedi.png");
-  background-repeat: repeat-y;
-  background-size: cover;
-}
 
 .titulo {
   padding-top: 1rem;

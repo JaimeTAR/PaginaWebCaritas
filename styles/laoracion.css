@@ -221,6 +221,7 @@ body {
         padding-top: 5%;
         gap: 40px;
         margin-left: 0;
+        object-fit: contain;
 
     } 
 
@@ -229,6 +230,7 @@ body {
         height: 50%;
         margin-left: 25%;
         padding-bottom: 10%;
+        object-fit: contain;
     }
     
     .txt3{
