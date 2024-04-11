@@ -1,5 +1,15 @@
 @import url(style.css);
 
+body {
+  overflow-x: hidden;
+  background-image: url(../images/termometro/bg.png);
+  background-position: top;
+}
+
+p {
+  background-color: rgb(255, 242, 227, 0.8);
+}
+
 .first-sect {
   text-align: center;
 }
@@ -10,13 +20,15 @@
 }
 
 .texto > img {
-  float: right;
-  transform: translateY(-120px);
+  position: absolute;
+  right: -50px;
+  top: -120px;
 }
 
 .texto {
+  position: relative;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: #d35b02;
   text-align: left;
 }
@@ -28,5 +40,200 @@
 }
 
 .texto > div > p {
-  width: 95%;
+  width: 90%;
+}
+
+.ejemplo-sect {
+  margin-bottom: 6ch;
+}
+
+.ejemplo-title {
+  position: relative;
+  text-align: center;
+}
+
+.ejemplo-title > img {
+  width: 200px;
+  margin-bottom: 4ch;
+}
+
+.ejemplo-title::before {
+  content: url(../images/termometro/termoejemplo.png);
+  position: absolute;
+  left: -20px;
+  top: -70px;
+}
+
+.texto-ejemplo {
+  text-align: left;
+  margin: 0 0 0 auto;
+  width: 70%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #d35b02;
+}
+
+.termometros-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-termometro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3ch;
+  width: 22%;
+  background-color: rgb(255, 242, 227);
+}
+
+.termometro {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  user-select: none;
+}
+
+.termometro > img {
+  width: 100%;
+}
+
+.termometro > * {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.canvas-termometro {
+  z-index: 5;
+}
+
+.input-box {
+  padding: 1ch;
+  border-radius: 100px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-box-1 {
+  color: rgb(122, 46, 128);
+  border: 3px solid rgb(122, 46, 128);
+  background-color: rgba(222, 106, 153, 0.25);
+}
+
+.input-box-2 {
+  color: rgb(181, 27, 66);
+  border: 3px solid rgb(181, 27, 66);
+  background-color: rgba(235, 96, 115, 0.25);
+}
+
+.input-box-3 {
+  color: rgb(227, 96, 2);
+  border: 3px solid rgb(227, 96, 2);
+  background-color: rgba(255, 176, 5, 0.25);
+}
+
+.input-box-4 {
+  color: rgb(84, 41, 30);
+  border: 3px solid rgb(84, 41, 30);
+  background-color: rgba(222, 140, 78, 0.25);
+}
+
+.imagenes-bottom {
+  margin-top: 6ch;
+  margin-bottom: 4ch;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 150px;
+}
+
+.imagenes-bottom > img {
+  scale: 1;
+}
+
+.imagenes-bottom > img:nth-child(1) {
+  width: 25%;
+}
+
+.imagenes-bottom > img:nth-child(2) {
+  width: 22%;
+}
+
+@media (max-width: 1300px) {
+  .column-termometro {
+    gap: 1ch;
+  }
+
+  .termometro {
+    width: 100%;
+  }
+
+  .termometro > img {
+    width: 50%;
+  }
+
+  .input-box {
+    padding: 0.5ch;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ejemplo-title::before {
+    scale: 0.75;
+  }
+
+  .texto > div > p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ejemplo-title::before {
+    content: "";
+  }
+
+  .texto-ejemplo {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .texto-ejemplo::before {
+    position: absolute;
+    content: url(../images/termometro/termoejemplo.png);
+    top: -180px;
+    scale: 0.5;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+  .termometros-container {
+    flex-wrap: wrap;
+  }
+
+  .column-termometro {
+    width: 50%;
+    margin-bottom: 5ch;
+  }
+}
+
+@media (max-width: 900px) {
+  .texto > img {
+    transform: translateX(50px);
+    scale: 0.75;
+  }
+
+  .termometros-container {
+    flex-wrap: wrap;
+  }
+
+  .column-termometro {
+    width: 100%;
+    margin-bottom: 5ch;
+  }
 }

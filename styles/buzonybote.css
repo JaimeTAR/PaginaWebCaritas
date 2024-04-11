@@ -1,1 +1,66 @@
 @import url(style.css);
+
+main {
+    background-image: url('../images/buzonybote/bg.png');
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: 90%;
+  }
+  
+
+.div__titulo {
+    text-align: center;
+    width: 100%;
+}
+
+.titulo {
+    width: 20%;
+}
+
+.buzon__monedas__horizontal {
+    opacity: 100%;
+    text-align: center;
+    transform: translate(0, 5%);
+    width: 100%;
+}
+
+.buzon {
+    transform: translate(-30%, 10%);
+    width: 30%;
+}
+
+.monedas {
+    transform: translate(15%, -55%);
+    width:20%;
+}
+
+.div__bote {
+    text-align: end; 
+    width: 100%
+}
+
+.señorita {
+    text-align: start;
+    transform: translate(-125%, 0);
+    width: 30%;
+}
+
+.bote {
+    transform: translate(-60%, -10%);
+    width: 30%
+}
+
+@media (max-width: 900px) {
+    main {
+        background-position: top;
+        background-repeat: repeat-y;
+    }
+    .div__titulo {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .titulo {
+        width: 40%;
+    }
+}
