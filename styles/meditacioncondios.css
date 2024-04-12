@@ -8,6 +8,21 @@ body {
   width: 100%;
 }
 
+main{
+  background-image: url(../images/Meditación/fondo.svg);
+  background-repeat: repeat;
+  background-position: center;
+  background-position: top;
+}
+
+p {
+  background-color: rgb(255, 242, 227, 0.8);
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  font-size: 1.25rem;
+}
 
 .titulo {
   padding-top: 1rem;

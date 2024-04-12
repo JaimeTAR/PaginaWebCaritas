@@ -1,10 +1,19 @@
 @import url(style.css);
 
 main {
-  background-image: url(../images//dondelapaz/dondelapazbg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-image: url(../images/elcultivo/fondo.svg);
+  background-repeat: repeat;
+  background-size:cover;
+  background-position: top;
+}
+
+p {
+  background-color: rgb(255, 242, 227, 0.8);
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  font-size: 1.25rem;
 }
 
 .ImagenCultivo{

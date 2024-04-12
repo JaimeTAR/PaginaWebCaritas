@@ -8,12 +8,21 @@ body {
     width: 100%;
 }
 
-.fondo{
-    background-image: url(../images/reyoreina/reyoreinabg.png);
+main{
+    background-image: url(../images/Oración/fondo.svg);
     background-repeat: repeat;
     background-position: center;
+    background-position: top;
 }
-  
+
+p {
+  background-color: rgb(255, 242, 227, 0.8);
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  font-size: 1.25rem;
+}
 
 .titulo, .subtitulo {
     padding-top: 1rem;
