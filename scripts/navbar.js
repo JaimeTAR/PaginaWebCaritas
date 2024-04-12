@@ -100,30 +100,30 @@ const dropdownItemsList = [
       text: "Termómetro familiar",
       href: currentPage === "termometro" ? "#" : "/pages/termometro.html",
     },
-    {
-      text: "Anti-valores",
-      href: currentPage === "antivalores" ? "#" : "/pages/antivalores.html",
-    },
-    {
-      text: "Enlace de valor",
-      href: currentPage === "enlacedevalor" ? "#" : "/pages/enlacedevalor.html",
-    },
-    {
-      text: "Círculos del valor",
-      href: currentPage === "circulosdelvalor" ? "#" : "/pages/circulosdelvalor.html",
-    },
-    {
-      text: "Dibuja amor",
-      href: currentPage === "dibujaamor" ? "#" : "/pages/dibujaamor.html",
-    },
-    {
-      text: "Solidaridad",
-      href: currentPage === "solidaridad" ? "#" : "/pages/solidaridad.html",
-    },
-    {
-      text: "Acciones de cambio",
-      href: currentPage === "accionesdecambio" ? "#" : "/pages/accionesdecambio.html",
-    },
+    // {
+    //   text: "Anti-valores",
+    //   href: currentPage === "antivalores" ? "#" : "/pages/antivalores.html",
+    // },
+    // {
+    //   text: "Enlace de valor",
+    //   href: currentPage === "enlacedevalor" ? "#" : "/pages/enlacedevalor.html",
+    // },
+    // {
+    //   text: "Círculos del valor",
+    //   href: currentPage === "circulosdelvalor" ? "#" : "/pages/circulosdelvalor.html",
+    // },
+    // {
+    //   text: "Dibuja amor",
+    //   href: currentPage === "dibujaamor" ? "#" : "/pages/dibujaamor.html",
+    // },
+    // {
+    //   text: "Solidaridad",
+    //   href: currentPage === "solidaridad" ? "#" : "/pages/solidaridad.html",
+    // },
+    // {
+    //   text: "Acciones de cambio",
+    //   href: currentPage === "accionesdecambio" ? "#" : "/pages/accionesdecambio.html",
+    // },
   ],
   [
     {
