@@ -1,10 +1,5 @@
 @import url(style.css);
-main {
-  background-image: url(../images//dondelapaz/dondelapazbg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
+
 body {
   color: #d35b02;
   font-weight: 700;
