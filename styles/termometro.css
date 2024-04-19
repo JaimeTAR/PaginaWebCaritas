@@ -236,4 +236,17 @@ p {
     width: 100%;
     margin-bottom: 5ch;
   }
+
+  .first-sect {
+    margin-bottom: 3ch;
+  }
+
+  .first-sect-img {
+    display: none;
+  }
+
+  .texto > div > p {
+    text-align: center;
+    width: 100%;
+  }
 }

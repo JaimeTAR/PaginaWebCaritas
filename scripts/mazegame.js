@@ -50,15 +50,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
       last_mouse.x = mouse.x;
       last_mouse.y = mouse.y;
-
-      console.log(last_mouse.x);
-      console.log(last_mouse.y);
-
+      
       mouse.x = e.clientX - rect.left;
       mouse.y = e.clientY - rect.top;
-
-      console.log(mouse.x);
-      console.log(mouse.y);
     },
     false
   );

@@ -2,12 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let canvases = document.querySelectorAll("canvas");
   let termometers = document.querySelectorAll(".termo-thing");
 
-  let colors = [
-    "rgb(122, 46, 128)",
-    "rgb(181, 27, 66)",
-    "rgb(227, 96, 2)",
-    "rgb(84, 41, 30)",
-  ];
+  let colors = ["rgb(122, 46, 128)", "rgb(181, 27, 66)", "rgb(227, 96, 2)", "rgb(84, 41, 30)"];
 
   // Assigning event handlers correctly
   window.onresize = () => {
@@ -43,7 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
   var i = 0;
 
   canvases.forEach((canvas) => {
-    var mouse = { x: 0, y: 0 };
+    var mouse = {
+      x: canvas.width * 0.5,
+      y: canvas.height * 0.15,
+    };
+
     var last_mouse = { x: 0, y: 0 };
     var ctx = canvas.getContext("2d");
     ctx.lineWidth = 5;
@@ -79,6 +78,40 @@ document.addEventListener("DOMContentLoaded", () => {
       "mouseup",
       function () {
         canvas.removeEventListener("mousemove", onPaint, false);
+      },
+      false
+    );
+
+    canvas.addEventListener(
+      "touchmove",
+      function (e) {
+        e.preventDefault();
+
+        var rect = canvas.getBoundingClientRect();
+        var touch = e.touches[0];
+
+        last_mouse.x = mouse.x;
+        last_mouse.y = mouse.y;
+
+        mouse.x = touch.clientX - rect.left;
+        mouse.y = touch.clientY - rect.top;
+      },
+      false
+    );
+
+    canvas.addEventListener(
+      "touchstart",
+      function (e) {
+        e.preventDefault();
+        canvas.addEventListener("touchmove", onPaint, false);
+      },
+      false
+    );
+
+    canvas.addEventListener(
+      "touchend",
+      function (e) {
+        canvas.removeEventListener("touchmove", onPaint, false);
       },
       false
     );
